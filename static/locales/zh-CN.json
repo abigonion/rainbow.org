@@ -1,0 +1,41 @@
+{
+    "HELLO" : "你好!",
+    "Change Language" : "英文",
+    "lang" : "/?lang=en-US",
+    "lang-url" : "?lang=zh-CN",
+
+    "Features" : "特征",
+    "Doc" : "文档",
+    "Github" : "开源代码",
+    "Support" : "支持",
+    "Get Started" : "开始",
+    "Change Lang" : "英文",
+
+    "Full Features" : "全部功能",
+    "FINANCE WITH A MISSION" : "财务与使命",
+    
+    "Title" : "快速跨境汇款 · 彩虹",
+    "Customizable" : "可定制的付款",
+    "Send money across borders quickly" : "快速汇款跨境",
+    "Rainbow" : "彩虹",
+    "Future" : "银行的未来就在这里",
+    "platform" : "彩虹是一个连接银行，支付系统和用户的平台。 集成以快速，可靠，几乎不需要转账手续费.",
+    "Remittances" : "汇款",
+    "ColumnOne_1" : "快速汇款跨境，只需几分钱。 促进不同货币之间的低成本支付",
+    "ColumnOne_1_1" : "●实时结算（2-5秒",
+    "ColumnOne_1_2" : "●加密算法安全交易",
+    "Mobile Branches" : "移动端",
+    "ColumnOne_2" : "通过移动端获得代理银行优势。 扩展您的零售业务，无需管理费用。",
+    "ColumnOne_2_1" : "使移动货币平台可互操作。 让您的客户将移动货币发送给不同提供商的收件人.",
+    "ColumnOne_2_2" : "●遵守合规性",
+    "ColumnOne_2_3" : "●像电子邮件一样移动的付款",
+    "Micropayments" : "为银行家提供的微支付和服务",
+    "ColumnOne_3_1" : "提高效率并降低较小转移的成本。 为您的客户提供增量付款选项.",
+    "ColumnOne_3_2" : "彩虹网络能够削减成本，因此您可以为新客户提供银行服务。 通过低成本的账户，贷款和微型存储来达到金字塔的基础",
+    "ColumnOne_3_3" : "●通过单一集成实现国际覆盖",
+    "ColumnOne_3_4" : "●非常适合小额支付：0.01美元的费用可处理约600,000笔交易",
+    "ColumnOne_3_5" : "●自动货币兑换",
+    "Subscribe" : "订阅更新。 我们不会发垃圾邮件给你。"
+
+
+}
