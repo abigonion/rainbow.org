@@ -37,3 +37,18 @@ contribution under the Apache license version 2.0 to this project.
 
 If you use images, please make a reference to the original site.
 
+  {
+    "name": "Use Cases",
+    "folder": "/static/docs/use-cases",
+    "indexFile": "index.md",
+    "files": [
+      "data-and-model-files-versioning.md",
+      "share-data-and-model-files.md",
+      "multiple-data-scientists-on-a-single-machine.md"
+    ],
+    "labels": {
+      "data-and-model-files-versioning.md": "Data & Model Files Versioning",
+      "share-data-and-model-files.md": "Share Data & Model Files",
+      "multiple-data-scientists-on-a-single-machine.md": "Shared Development Machine"
+    }
+  },

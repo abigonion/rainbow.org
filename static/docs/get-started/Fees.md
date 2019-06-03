@@ -1,15 +1,15 @@
 # 费用
 
-Stellar 网络要求提交事务需要支付一定的[手续费](#transaction-fee)，账户也需要满足[最低账户余额](#minimum-account-balance)的要求，这是为了防止网络过于拥堵，同时还可以用于确认事务的优先级。
+Rainbow 网络要求提交事务需要支付一定的[手续费](#transaction-fee)，账户也需要满足[最低账户余额](#minimum-account-balance)的要求，这是为了防止网络过于拥堵，同时还可以用于确认事务的优先级。
 
 有两个特殊值用于计算费用：
 
 1. **基本费用(base fee)** (目前为 100 stroops) 用于计算提交事务的费用
-2. **基本储备金(base reserve)** (目前为 0.5 XLM) 用于计算账户的最低余额
+2. **基本储备金(base reserve)** (目前为 0.5 RBC) 用于计算账户的最低余额
 
-## 事务的费用
+## 事务的费用 <span id='transaction-fee'>
 
-事务的费用是事务所包含的操作的数量乘以**基本费用**，基本费用为 **100 stroops** (0.00001 XLM)。
+事务的费用是事务所包含的操作的数量乘以**基本费用**，基本费用为 **100 stroops** (0.00001 RBC)。
 
 ```math-formula
 ([# 操作的数量] * [基本费用])
@@ -17,28 +17,28 @@ Stellar 网络要求提交事务需要支付一定的[手续费](#transaction-fe
 
 例如，若一个事务里有两个操作：一个账户设置一条 Trustline *（操作1）*，向另一个账户发送付款 *（操作2）* ，那么这个事务的费用为 $$2 * [基本费用] = 200 stroops$$。
 
-Stellar 从事务的[源账户(source account)](./transactions.md#source-account)中扣除全部费用，而不管每个操作涉及哪个账户或是哪些账户签署了事务。
+Rainbow 从事务的[源账户(source account)](transactions#source-account)中扣除全部费用，而不管每个操作涉及哪个账户或是哪些账户签署了事务。
 
 
 ### 事务的限制
 
-每个 Stellar 节点通常会限制总账关闭时向网络提交的事务数。如果提交的事务太多，节点会优先提交那些手续费更高的事务，而那些没被提交的事务会在之后的总账中提交。
+每个 Rainbow 节点通常会限制总账关闭时向网络提交的事务数。如果提交的事务太多，节点会优先提交那些手续费更高的事务，而那些没被提交的事务会在之后的总账中提交。
 
-有关更多信息，请参见[事务的生命周期](./transactions.md#life-cycle)。
+有关更多信息，请参见[事务的生命周期](transactions#life-cycle)。
 
 ## 费用池
 
-费用池是从[交易费](./fees.md#transaction-fee)中收取的 Lumens。
+费用池是从[交易费](fees#transaction-fee)中收取的 waterdrop。
 
-Stellar 不保留这些 Lumens。它们在每周的[通货膨胀投票](./inflation.md)中被分发出去。
+Rainbow 不保留这些 waterdrop。它们在每周的[通货膨胀投票](inflation.md)中被分发出去。
 
-如果投票后有任何仍未分发的 Lumens，这些 Lumens 将返还到费用池，在下一轮投票中分发。
+如果投票后有任何仍未分发的 waterdrop，这些 waterdrop 将返还到费用池，在下一轮投票中分发。
 
-## 最低账户余额
+## 最低账户余额 <span id='minimum-account-balance'>
 
-所有 Stellar 账户必须保证账户满足最低账户余额的要求。任何试图将账户余额减少到最低账户余额以下的事务将会被拒绝，并抛出`余额不足(INSUFFICIENT_BALANCE)`错误。
+所有 Rainbow 账户必须保证账户满足最低账户余额的要求。任何试图将账户余额减少到最低账户余额以下的事务将会被拒绝，并抛出`余额不足(INSUFFICIENT_BALANCE)`错误。
 
-最低账户余额可通过基本储备金(目前为 **0.5 XLM**)计算得出：
+最低账户余额可通过基本储备金(目前为 **0.5 RBC**)计算得出：
 
 ```math-formula
 (2 + [# 子条目数]) * [基本储备金]
@@ -51,12 +51,11 @@ Stellar 不保留这些 Lumens。它们在每周的[通货膨胀投票](./inflat
 - 签名账户(Signers)
 - 数据对(Data entries)
 
-例如，如果一个账户拥有 1 个 trustline 和 2 个 offers ，则该账户的最低账户余额为 $$(2 + 3) * [基本储备金] = 2.5 XLM$$.
+例如，如果一个账户拥有 1 个 trustline 和 2 个 offers ，则该账户的最低账户余额为 $$(2 + 3) * [基本储备金] = 2.5 RBC$$.
 
-从协议版本 10 开始，账户会记录 Lumens 的出售负债数量，除了上面讨论的最低余额外必须得到满足，如果有任何事务试图将账户余额减少到最低账户余额加 Lumens 的出售负债数量以下的话，则会抛出`余额不足(INSUFFICIENT_BALANCE)`错误。
+从协议版本 10 开始，账户会记录 waterdrop 的出售负债数量，除了上面讨论的最低余额外必须得到满足，如果有任何事务试图将账户余额减少到最低账户余额加 waterdrop 的出售负债数量以下的话，则会抛出`余额不足(INSUFFICIENT_BALANCE)`错误。
 
 ## 费用的变更
 
 **基本储备金**和**基本费用**是会变动的，但它们多年才会变更一次。在大多数情况下，您可以将它们视为固定值。当它们被更改时，更改按照与任何事务相同的一致过程进行。当它们变更后，它会在这之后的事务中体现出来。有关详细信息，请参阅[版本]。
 
-您可以通过查看[最新总账的详细信息](../../horizon/reference/endpoints/ledgers-single.md)来查看当前的费用。

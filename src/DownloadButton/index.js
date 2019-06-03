@@ -5,32 +5,32 @@ import isClient from '../utils/isClient'
 import { logEvent } from '../utils/ga'
 
 const VERSION = `0.41.0`
-const OSX = `osx`
-const WINDOWS = `win`
+const IOS = `ios`
+const Android = `android`
 const LINUX = `linux`
 const LINUX_RPM = `linux_rpm`
 const UNKNOWN = `...`
 const LINE = `line`
 
 const links = {
-  [OSX]: {
-    title: 'Mac OS',
-    url: `https://github.com/iterative/dvc/releases/download/${VERSION}/dvc-${VERSION}.pkg`
+  [IOS]: {
+    title: 'IOS',
+    url: `https://fir.im/rainbow2`
   },
-  [WINDOWS]: {
-    title: 'Windows',
-    url: `https://github.com/iterative/dvc/releases/download/${VERSION}/dvc-${VERSION}.exe`
+  [Android]: {
+    title: 'Android',
+    url: `https://fir.im/rainbow`
   },
   [LINUX]: {
     title: 'Linux Deb',
-    url: `https://github.com/iterative/dvc/releases/download/${VERSION}/dvc_${VERSION}_amd64.deb`
+    url: ``
   },
   [LINUX_RPM]: {
     title: 'Linux RPM',
-    url: `https://github.com/iterative/dvc/releases/download/${VERSION}/dvc-${VERSION}-1.x86_64.rpm`
+    url: ``
   },
   [UNKNOWN]: {
-    title: 'pip install dvc'
+    title: 'Install wallet'
   },
   [LINE]: {
     line: true
@@ -75,8 +75,8 @@ export default class DownloadButton extends Component {
     let OSName = UNKNOWN
     if (!isClient) return OSName
 
-    if (navigator.userAgent.indexOf('Win') !== -1) OSName = WINDOWS
-    if (navigator.userAgent.indexOf('Mac') !== -1) OSName = OSX
+    if (navigator.userAgent.indexOf('android') !== -1) OSName = Android
+    if (navigator.userAgent.indexOf('iphone') !== -1) OSName = IOS
     if (navigator.userAgent.indexOf('Linux') !== -1) OSName = LINUX
 
     return OSName
@@ -101,7 +101,7 @@ export default class DownloadButton extends Component {
 
   renderLinks = () => (
     <Links>
-      {[OSX, WINDOWS, LINUX, LINUX_RPM, LINE, UNKNOWN].map(id => {
+      {[IOS, Android, LINUX, LINUX_RPM, LINE, UNKNOWN].map(id => {
         const link = links[id]
 
         if (link.line) {
@@ -173,13 +173,14 @@ export default class DownloadButton extends Component {
 const Handler = styled.span`
   position: relative;
   display: inline-block;
-  width: 186px;
+  width: 100%;
   height: 60px;
 `
 
 const Button = styled.button`
+
   position: relative;
-  width: 186px;
+  width: 100%;
   height: 60px;
   border: none;
   border-radius: 4px;

@@ -12,6 +12,7 @@ import FeaturesHero from '../src/FeaturesHero'
 import TrySection from '../src/TrySection'
 
 import FreaturesFont from '../src/FreaturesFont';
+import intl from 'react-intl-universal'
 const HeadInjector = () => (
   <Head>
     <title>Features | Machine Learning Version Control System</title>
@@ -28,7 +29,7 @@ export class MyFeafures extends Component {
           <FeaturesHero />
         </Hero>
             <FreaturesFont />
-        <TrySection title="Ready to give it a try?" />
+        <TrySection title={intl.get('try')} />
       </Page>
     )
   }

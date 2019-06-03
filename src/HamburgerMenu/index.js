@@ -5,6 +5,7 @@ import { media } from '../styles'
 import Hamburger from '../Hamburger'
 import { logEvent } from '../utils/ga'
 
+import intl from 'react-intl-universal'
 const SocialLink = ({ src, href, click, children }) => (
   <Link src={src} href={href} onClick={click}>
     {children}
@@ -55,10 +56,11 @@ export default class HamburgerMenu extends Component {
             <Section>
               <Top>
                 <Logo href="/">
-                  <img
-                    src="/static/img/logo_white.png"
+                  {/* <img
+                    src="/static/img/logo_white.png" 
+                    // logo修改
                     alt="dvc.org"
-                    width={34}
+                    width={34} */}
                   />
                 </Logo>
               </Top>
@@ -68,26 +70,26 @@ export default class HamburgerMenu extends Component {
                   <Heading>Product</Heading>
                   <Links>
                     <Link href="/#" onClick={this.scrollToTop}>
-                      Overview
+                      {intl.get("Overview")}
                     </Link>
-                    <Link href="/features" onClick={this.itemClick('features')}>
-                      Features
+                    <Link href={"/features"+intl.get("lang-url")} onClick={this.itemClick('features')}>
+                    {intl.get("Features")}
                     </Link>
                   </Links>
                 </Column>
                 <Column>
                   <Heading>Help</Heading>
                   <Links>
-                    <Link href="/support" onClick={this.itemClick('support')}>
-                      Support
+                    <Link href={"/support" + intl.get("lang-url")} onClick={this.itemClick('support')}>
+                      {intl.get("Support")}
                     </Link>
                     <Link
-                      href="/doc/get-started"
+                      href={"/doc/get-started" + intl.get("lang-url")}
                       onClick={this.itemClick('get-started')}
                     >
                       Get started
                     </Link>
-                    <SocialLink
+                    {/* <SocialLink
                       src="/static/img/chat.png"
                       href="/chat"
                       onClick={this.itemClick('chat')}
@@ -96,10 +98,10 @@ export default class HamburgerMenu extends Component {
                     </SocialLink>
                     <Link href="/doc" onClick={this.itemClick('doc')}>
                       Documentation
-                    </Link>
+                    </Link> */}
                   </Links>
                 </Column>
-                <Column>
+                {/* <Column>
                   <Heading>Company</Heading>
                   <Links>
                     <Link
@@ -116,31 +118,25 @@ export default class HamburgerMenu extends Component {
                       Iterative.ai
                     </SocialLink>
                   </Links>
-                </Column>
+                </Column> */}
                 <Column>
                   <Heading>Social</Heading>
                   <Links>
-                    <SocialLink
-                      src="/static/img/twitter.png"
-                      href="https://twitter.com/Iterativeai "
-                      click={this.itemClick('twitter')}
-                    >
-                      Twitter
-                    </SocialLink>
+                    {/* <SocialLink
+              src="/static/img/twitter.png"
+              href="https://twitter.com/DVCorg"
+            >
+              Twitter
+            </SocialLink> */}
                     <SocialLink
                       src="/static/img/github.png"
-                      href="https://github.com/iterative"
-                      click={this.itemClick('github')}
+                      href="https://github.com/iterative/dvc"
                     >
                       Github
-                    </SocialLink>
-                    <SocialLink
-                      src="/static/img/discord.png"
-                      href="/chat"
-                      click={this.itemClick('chat')}
-                    >
-                      Discord
-                    </SocialLink>
+            </SocialLink>
+                    {/* <SocialLink src="/static/img/discord.png" href="/chat">
+              Discord
+            </SocialLink> */}
                   </Links>
                 </Column>
               </Columns>

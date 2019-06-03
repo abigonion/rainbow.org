@@ -1,8 +1,8 @@
 # 操作清单
 
-如果您想要知道操作是如何在 Stellar 中运行的，请阅读[这篇文章](./operations.md)。
+如果您想要知道操作是如何在 Rainbow 中运行的，请阅读[这篇文章](./operations.md)。
 
-如果您想要了解操作的协议规范，请参阅 [stellar-transactions.x](https://github.com/stellar/stellar-core/blob/master/src/xdr/Stellar-transaction.x)。
+如果您想要了解操作的协议规范，请参阅 [rainbow-transactions.x](https://github.com/rainbow/rainbow-core/blob/master/src/xdr/Rainbow-transaction.x)。
 
 - [Create Account(创建账户)](#create-account)
 - [Payment(付款)](#payment)
@@ -18,9 +18,9 @@
 - [Bump Sequence(增大序列号)](#bump-sequence)
 
 ## Create Account(创建账户)<span id="create-account">
-[JavaScript](http://stellar.github.io/js-stellar-sdk/Operation.html#.createAccount) | [Java](http://stellar.github.io/java-stellar-sdk/org/stellar/sdk/CreateAccountOperation.Builder.html) | [Go](https://godoc.org/github.com/stellar/go/build#CreateAccountBuilder)
+[JavaScript](http://rainbow.github.io/js-rainbow-sdk/Operation.html#.createAccount) | [Java](http://rainbow.github.io/java-rainbow-sdk/org/rainbow/sdk/CreateAccountOperation.Builder.html) | [Go](https://godoc.org/github.com/rainbow/go/build#CreateAccountBuilder)
 
-通过这个操作给特定的账户发送一定数量的 Lumens 以在网络中创建该账户。
+通过这个操作给特定的账户发送一定数量的 waterdrop 以在网络中创建该账户。
 
 阈值等级：中
 
@@ -31,7 +31,7 @@
 | 参数        | 类型       | 描述                                                                                |
 | ---------------- | ---------- | ------------------------------------------------------------------------------------------ |
 | Destination      | account ID | 需要被激活的账户地址。                                  |
-| Starting Balance | integer    | 用于创建新账户的 XLM 的数量，这些 XLM 将从源账户中扣除。 |
+| Starting Balance | integer    | 用于创建新账户的 RBC 的数量，这些 RBC 将从源账户中扣除。 |
 
 
 可能发送的错误：
@@ -39,12 +39,12 @@
 | 错误代码 | 编号 | 描述 |
 | ----- | ---- | ------|
 |CREATE_ACCOUNT_MALFORMED| -1| `destination` 无效。 |
-|CREATE_ACCOUNT_UNDERFUNDED| -2| 源账户没有足够的资产来创建这个账户，或是这个操作会导致账户无法满足它的售出负债。另外，发送 XLM 的时候需要确保发送后账户仍然满足账户最低余额的要求。 |
-|CREATE_ACCOUNT_LOW_RESERVE| -3| 发送给 `destination` 账户的 XLM 数目不足以让它满足最低账户余额的要求。 |
+|CREATE_ACCOUNT_UNDERFUNDED| -2| 源账户没有足够的资产来创建这个账户，或是这个操作会导致账户无法满足它的售出负债。另外，发送 RBC 的时候需要确保发送后账户仍然满足账户最低余额的要求。 |
+|CREATE_ACCOUNT_LOW_RESERVE| -3| 发送给 `destination` 账户的 RBC 数目不足以让它满足最低账户余额的要求。 |
 |CREATE_ACCOUNT_ALREADY_EXIST| -4| `destination` 账户已经存在，无需重复创建。 |
 
 ## Payment(付款) <span id="payment">
-[JavaScript](http://stellar.github.io/js-stellar-sdk/Operation.html#.payment) | [Java](http://stellar.github.io/java-stellar-sdk/org/stellar/sdk/PaymentOperation.Builder.html) | [Go](https://godoc.org/github.com/stellar/go/build#PaymentBuilder)
+[JavaScript](http://rainbow.github.io/js-rainbow-sdk/Operation.html#.payment) | [Java](http://rainbow.github.io/java-rainbow-sdk/org/rainbow/sdk/PaymentOperation.Builder.html) | [Go](https://godoc.org/github.com/rainbow/go/build#PaymentBuilder)
 
 将特定数量的特定资产发送给目标账户。
 
@@ -65,7 +65,7 @@
 |错误代码| 编号| 描述|
 | --- | --- | --- |
 |PAYMENT_MALFORMED| -1| 输入的参数不正确。 |
-|PAYMENT_UNDERFUNDED| -2| 源账户(发送方)没有足够的资产去完成这笔付款，或是这个操作会导致账户无法满足它的售出负债。另外，发送 XLM 的时候需要确保发送后账户仍然满足账户最低余额的要求。 |
+|PAYMENT_UNDERFUNDED| -2| 源账户(发送方)没有足够的资产去完成这笔付款，或是这个操作会导致账户无法满足它的售出负债。另外，发送 RBC 的时候需要确保发送后账户仍然满足账户最低余额的要求。 |
 |PAYMENT_SRC_NO_TRUST| -3| 源账户没有信任他正在尝试发送的资产的发行账户。 |
 |PAYMENT_SRC_NOT_AUTHORIZED| -4| 源账号无权发送该资产。 |
 |PAYMENT_NO_DESTINATION| -5| 接收方的账户不存在。 |
@@ -75,9 +75,9 @@
 |PAYMENT_NO_ISSUER| -9| 资产的发行方不存在。 |
 
 ## Path Payment(路径付款) <span id="path-payment">
-[JavaScript](http://stellar.github.io/js-stellar-sdk/Operation.html#.pathPayment) | [Java](http://stellar.github.io/java-stellar-sdk/org/stellar/sdk/PathPaymentOperation.Builder.html) | [Go](https://godoc.org/github.com/stellar/go/build#PayWithPath)
+[JavaScript](http://rainbow.github.io/js-rainbow-sdk/Operation.html#.pathPayment) | [Java](http://rainbow.github.io/java-rainbow-sdk/org/rainbow/sdk/PathPaymentOperation.Builder.html) | [Go](https://godoc.org/github.com/rainbow/go/build#PayWithPath)
 
-通过报价路径将特定数目的特定资产发送到目标账户。这可以使发送的资产(例如，450 XLM)不同于接收的资产(例如，6 BTC)。
+通过报价路径将特定数目的特定资产发送到目标账户。这可以使发送的资产(例如，450 RBC)不同于接收的资产(例如，6 BTC)。
 
 需要注意的几点：
 * 路径支付不允许中间报价来自源账户，因为这会产生最差的汇率。您需要将路径付款拆分为两个支付数目较小的路径付款，或者确保源账户的订单不在订单簿的顶部。
@@ -97,14 +97,14 @@
 |Destination| account ID| 收款方的账户 ID。 |
 |Destination asset| asset| 接收方收到的资产类型。 |
 |Destination amount| integer| 接收方收到的 `destination asset` 的数目。 |
-|Path| list of assets| 兑换路径中使用到的中间资产(`send asset` 和 `destination asset` 不包含在这里面)。举例来说，您找到了唯一一条将 USD 兑换为 EUR 的路径，这条路径经过了 XLM 与 BTC。这条路径是 USD -> XLM -> BTC -> EUR，请注意  `path`  中包含了 XLM 和 BTC。 |
+|Path| list of assets| 兑换路径中使用到的中间资产(`send asset` 和 `destination asset` 不包含在这里面)。举例来说，您找到了唯一一条将 USD 兑换为 EUR 的路径，这条路径经过了 RBC 与 BTC。这条路径是 USD -> RBC -> BTC -> EUR，请注意  `path`  中包含了 RBC 和 BTC。 |
 
 可能发送的错误：
 
 | 错误代码 | 编号 | 描述 |
 | ----- | ---- | ------|
 |PATH_PAYMENT_MALFORMED| -1| 输入的参数不正确。 |
-|PATH_PAYMENT_UNDERFUNDED| -2| 源账户(发送方)没有足够的资产去完成这笔付款，或是这笔付款无法满足账户的售出负债。另外，发送 XLM 的时候需要确保发送后账户仍然满足账户最低余额的要求。 |
+|PATH_PAYMENT_UNDERFUNDED| -2| 源账户(发送方)没有足够的资产去完成这笔付款，或是这笔付款无法满足账户的售出负债。另外，发送 RBC 的时候需要确保发送后账户仍然满足账户最低余额的要求。 |
 |PATH_PAYMENT_SRC_NO_TRUST| -3| 源账户没有信任他正在尝试发送的资产的发行账户。 |
 |PATH_PAYMENT_SRC_NOT_AUTHORIZED| -4| 源账号无权发送该资产。 |
 |PATH_PAYMENT_NO_DESTINATION| -5| 接收方的账户不存在。 |
@@ -112,12 +112,12 @@
 |PATH_PAYMENT_NOT_AUTHORIZED| -7| 接收方没有被资产发行方允许持有该资产。 |
 |PATH_PAYMENT_LINE_FULL| -8| 接收这笔付款将会导致接收方无法满足购买负载或资产持有数量的限制。 |
 |PATH_PAYMENT_NO_ISSUER| -9| 其中某个资产的发行方缺失了。 |
-|PATH_PAYMENT_TOO_FEW_OFFERS| -10| 没有找到兑换 `send asset` 与  `destination asset` 的路径。Stellar 查找的路径最多只能拥有 6 个跃点。 |
+|PATH_PAYMENT_TOO_FEW_OFFERS| -10| 没有找到兑换 `send asset` 与  `destination asset` 的路径。Rainbow 查找的路径最多只能拥有 6 个跃点。 |
 |PATH_PAYMENT_OFFER_CROSS_SELF| -11| 这笔付款会使自己的订单成交。 |
 |PATH_PAYMENT_OVER_SENDMAX| -12| 通过此路径发送特定`数量(destination amount)`的`目标资产(destination asset)`的会导致超出`限额(send max)`。 |
 
 ## Manage Offer(管理订单) <span id="manage-offer">
-[JavaScript](http://stellar.github.io/js-stellar-sdk/Operation.html#.manageOffer) | [Java](http://stellar.github.io/java-stellar-sdk/org/stellar/sdk/ManageOfferOperation.Builder.html) | [Go](https://godoc.org/github.com/stellar/go/build#ManageOfferBuilder)
+[JavaScript](http://rainbow.github.io/js-rainbow-sdk/Operation.html#.manageOffer) | [Java](http://rainbow.github.io/java-rainbow-sdk/org/rainbow/sdk/ManageOfferOperation.Builder.html) | [Go](https://godoc.org/github.com/rainbow/go/build#ManageOfferBuilder)
 
 创建、更新或删除订单。
 
@@ -136,7 +136,7 @@
 | Selling| asset| 订单创建者想出售的资产。 |
 | Buying| asset| 订单创建者想购买的资产。 |
 | Amount| integer| 需要售出的资产的数目。当您需要删除订单是请将该值设置为 `0`， |
-| Price| {numerator, denominator} | Price 代表每售出一个待售资产可以得到多少个待购资产。例如，如果您想通过卖出 30 XLM 获得 5 BTC，那么 Price 可以设置为 {5,30}。 |
+| Price| {numerator, denominator} | Price 代表每售出一个待售资产可以得到多少个待购资产。例如，如果您想通过卖出 30 RBC 获得 5 BTC，那么 Price 可以设置为 {5,30}。 |
 | Offer ID| unsigned integer| 订单的 ID。 需要新建订单请将该值设置为 `0`，需要修改和删除某个订单，请将该值设置为目标订单的 Offer ID。 |
 
 可能发送的错误：
@@ -149,18 +149,18 @@
 |MANAGE_OFFER_SELL_NOT_AUTHORIZED| -4| 创建订单的账户无权出售此资产。 |
 |MANAGE_OFFER_BUY_NOT_AUTHORIZED| -5| 创建订单的账户无权购买此资产。 |
 |MANAGE_OFFER_LINE_FULL| -6| 创建此订单会导致该账户无法满足购买负载或买入资产的持有数量的限制。 |
-|MANAGE_OFFER_UNDERFUNDED| -7| 创建此订单会导致该账户无法满足买入的资产的持有数量的限制或售出负载。请注意，如果是销售 XLM 的话，那么此账户必须保证满足最低账户余额的要求，最低账户余额是假设此订单不会立即完全成交而计算的。 |
+|MANAGE_OFFER_UNDERFUNDED| -7| 创建此订单会导致该账户无法满足买入的资产的持有数量的限制或售出负载。请注意，如果是销售 RBC 的话，那么此账户必须保证满足最低账户余额的要求，最低账户余额是假设此订单不会立即完全成交而计算的。 |
 |MANAGE_OFFER_CROSS_SELF| -8| 此账号有着等价或价格更低的对手订单，如果创建此订单会导致自己与自己交易。 |
 |MANAGE_OFFER_SELL_NO_ISSUER| -9| 出售资产的发行账户不存在。 |
 |MANAGE_OFFER_BUY_NO_ISSUER| -10| 买入资产的发行账户不存在。 |
 |MANAGE_OFFER_NOT_FOUND| -11| 提供的 `offerID` 不存在。 |
-|MANAGE_OFFER_LOW_RESERVE| -12| 该账户的 XLM 余额或售出负债不足以使该账户能够创建一个订单。每创建一个订单都会增加账户需要持有的最低账户余额。 |
+|MANAGE_OFFER_LOW_RESERVE| -12| 该账户的 RBC 余额或售出负债不足以使该账户能够创建一个订单。每创建一个订单都会增加账户需要持有的最低账户余额。 |
 
 ## Create Passive Offer(创建被动订单) <span id="create-passive-offer">
-[JavaScript](http://stellar.github.io/js-stellar-sdk/Operation.html#.createPassiveOffer) | [Java](http://stellar.github.io/java-stellar-sdk/org/stellar/sdk/CreatePassiveOfferOperation.Builder.html) | [Go](https://godoc.org/github.com/stellar/go/build#ManageOfferBuilder)
+[JavaScript](http://rainbow.github.io/js-rainbow-sdk/Operation.html#.createPassiveOffer) | [Java](http://rainbow.github.io/java-rainbow-sdk/org/rainbow/sdk/CreatePassiveOfferOperation.Builder.html) | [Go](https://godoc.org/github.com/rainbow/go/build#ManageOfferBuilder)
 
 被动订单是一种不会在相同报价的情况下成交的订单，只有在报价不相等时才会成交。
-例如，使用 XLM 购买 BTC 的最佳价格为 6XLM/BTC，然后您创建了一个以 6XLM/BTC 的价格售出 BTC 的被动订单，您的被动订单将*不会*立刻成交。
+例如，使用 RBC 购买 BTC 的最佳价格为 6RBC/BTC，然后您创建了一个以 6RBC/BTC 的价格售出 BTC 的被动订单，您的被动订单将*不会*立刻成交。
 
 值得注意的是，在被动订单之后创建的常规订单可以与该被动订单成交，即使两者的报价相同。
 
@@ -177,7 +177,7 @@
 |Selling| asset| 订单创建者想出售的资产。 |
 |Buying| asset| 订单创建者想购买的资产。 |
 |Amount| integer| 需要售出的资产的数目。 |
-|Price| {numerator, denominator}| Price 代表每售出一个待售资产可以得到多少个待购资产。例如，如果您想通过卖出 30 XLM 获得 5 BTC，那么 Price 可以设置为 {5,30}。 |
+|Price| {numerator, denominator}| Price 代表每售出一个待售资产可以得到多少个待购资产。例如，如果您想通过卖出 30 RBC 获得 5 BTC，那么 Price 可以设置为 {5,30}。 |
 
 可能发送的错误：
 
@@ -189,19 +189,19 @@
 |MANAGE_OFFER_SELL_NOT_AUTHORIZED| -4| 创建订单的账户无权出售此资产。 |
 |MANAGE_OFFER_BUY_NOT_AUTHORIZED| -5| 创建订单的账户无权购买此资产。 |
 |MANAGE_OFFER_LINE_FULL| -6| 创建此订单会导致该账户无法满足购买负载或买入资产的持有数量的限制。 |
-|MANAGE_OFFER_UNDERFUNDED| -7| 创建此订单会导致该账户无法满足买入的资产的持有数量的限制或售出负载。请注意，如果是销售 XLM 的话，那么此账户必须保证满足最低账户余额的要求，最低账户余额是假设此订单不会立即完全成交而计算的。 |
+|MANAGE_OFFER_UNDERFUNDED| -7| 创建此订单会导致该账户无法满足买入的资产的持有数量的限制或售出负载。请注意，如果是销售 RBC 的话，那么此账户必须保证满足最低账户余额的要求，最低账户余额是假设此订单不会立即完全成交而计算的。 |
 |MANAGE_OFFER_CROSS_SELF| -8| 此账号有着等价或价格更低的对手订单，如果创建此订单会导致自己与自己交易。 |
 |MANAGE_OFFER_SELL_NO_ISSUER| -9| 出售资产的发行账户不存在。 |
 |MANAGE_OFFER_BUY_NO_ISSUER| -10| 买入资产的发行账户不存在。 |
 |MANAGE_OFFER_NOT_FOUND| -11| 提供的 `offerID` 不存在。 |
-|MANAGE_OFFER_LOW_RESERVE| -12| 该账户的 XLM 余额或售出负债不足以使该账户能够创建一个订单。每创建一个订单都会增加账户需要持有的最低账户余额。 |
+|MANAGE_OFFER_LOW_RESERVE| -12| 该账户的 RBC 余额或售出负债不足以使该账户能够创建一个订单。每创建一个订单都会增加账户需要持有的最低账户余额。 |
 
 ## Set Options(设置账户选项) <span id="set-options">
-[JavaScript](http://stellar.github.io/js-stellar-sdk/Operation.html#.setOptions) | [Java](http://stellar.github.io/java-stellar-sdk/org/stellar/sdk/SetOptionsOperation.Builder.html) | [Go](https://godoc.org/github.com/stellar/go/build#SetOptionsBuilder)
+[JavaScript](http://rainbow.github.io/js-rainbow-sdk/Operation.html#.setOptions) | [Java](http://rainbow.github.io/java-rainbow-sdk/org/rainbow/sdk/SetOptionsOperation.Builder.html) | [Go](https://godoc.org/github.com/rainbow/go/build#SetOptionsBuilder)
 
 此操作设置账户的各种选项。
 
-有关设置签名的更多信息，请参阅[多重签名](https://stellar-docs.overcat.me/guides/concepts/multi-sig.html)。
+有关设置签名的更多信息，请参阅[多重签名](https://rainbow-docs.overcat.me/guides/concepts/multi-sig.html)。
 
 当设置签名者或阈值时，此操作的阈值等级为高。
 
@@ -214,20 +214,20 @@
 |参数| 类型| 描述|
 | --- | --- | --- |
 |inflation Destination| account ID| 通货膨胀的目标账户。 |
-|Clear flags| integer| 指定您想要清除的标识位。想要详细了解标识位，请参阅[账户文档](./accounts.md)。位掩码整数从账户的现有标识中减去。这允许在不知道现有标志的情况下设置特定标识位。 |
-|Set flags| integer| 指定您想要设置的标识位。想要详细了解标识位，请参阅[账户文档](./accounts.md)。位掩码整数添加到账户的现有标识上。这允许在不知道现有标志的情况下设置特定标识位。 |
+|Clear flags| integer| 指定您想要清除的标识位。想要详细了解标识位，请参阅[账户文档](accounts)。位掩码整数从账户的现有标识中减去。这允许在不知道现有标志的情况下设置特定标识位。 |
+|Set flags| integer| 指定您想要设置的标识位。想要详细了解标识位，请参阅[账户文档](accounts)。位掩码整数添加到账户的现有标识上。这允许在不知道现有标志的情况下设置特定标识位。 |
 |Master weight| integer| 主密钥的权重。此账户还可以使用 `signer` 参数添加用于签署事务的其他密钥。 |
-|Low threshold| integer| 0-255之间的数字，表示此账户在其执行的具有[低等阈值的](https://stellar-docs.overcat.me/guides/concepts/multi-sig.html)操作所需要的[阈值](https://stellar-docs.overcat.me/guides/concepts/multi-sig.md)。 |
-|Medium threshold| integer| 0-255之间的数字，表示此账户在其执行的具有[中等阈值的](https://stellar-docs.overcat.me/guides/concepts/multi-sig.html)操作所需要的[阈值](https://stellar-docs.overcat.me/guides/concepts/multi-sig.md)。 |
-|High threshold| integer| 0-255之间的数字，表示此账户在其执行的具有[高等阈值的](https://stellar-docs.overcat.me/guides/concepts/multi-sig.html)操作所需要的[阈值](https://stellar-docs.overcat.me/guides/concepts/multi-sig.md)。 |
-|Home domain| string| 为账户设置主域名。请参阅[联邦服务](./federation.md)。 |
+|Low threshold| integer| 0-255之间的数字，表示此账户在其执行的具有低等阈值的操作所需要的阈值
+|Medium threshold| integer| 0-255之间的数字，表示此账户在其执行的具有中等阈值的操作所需要的阈值。 |
+|High threshold| integer| 0-255之间的数字，表示此账户在其执行的具有高等阈值的操作所需要的阈值。 |
+|Home domain| string| 为账户设置主域名。请参阅联邦服务。 |
 |Signer| {Public Key, weight}| 为账户添加，更新或删除签名者。如果将权重设为 0 的话，则删除签名者。 |
 
 可能发送的错误：
 
 | 错误代码 | 编号 | 描述 |
 | ----- | ---- | ------|
-|SET_OPTIONS_LOW_RESERVE| -1| 该账户的 XLM 余额或售出负债不足以使该账户能够新增一个子条目。每添加一个新的签名者都会增加账户需要持有的最低账户余额。 |
+|SET_OPTIONS_LOW_RESERVE| -1| 该账户的 RBC 余额或售出负债不足以使该账户能够新增一个子条目。每添加一个新的签名者都会增加账户需要持有的最低账户余额。 |
 |SET_OPTIONS_TOO_MANY_SIGNERS| -2| 账户最多可拥有 20 个签名者，当添加的签名者超过这个限制的时候会失败。 |
 |SET_OPTIONS_BAD_FLAGS| -3| 添加/清除的单个标志或组合无效。 |
 |SET_OPTIONS_INVALID_INFLATION| -4| `inflation` 字段中设置的目标账户不存在。 |
@@ -238,9 +238,9 @@
 |SET_OPTIONS_INVALID_HOME_DOMAIN| -9| 主域名参数不正确。 |
 
 ## Change Trust(修改信任) <span id="change-trust">
-[JavaScript](http://stellar.github.io/js-stellar-sdk/Operation.html#.changeTrust) | [Java](http://stellar.github.io/java-stellar-sdk/org/stellar/sdk/ChangeTrustOperation.Builder.html) | [Go](https://godoc.org/github.com/stellar/go/build#ChangeTrustBuilder)
+[JavaScript](http://rainbow.github.io/js-rainbow-sdk/Operation.html#.changeTrust) | [Java](http://rainbow.github.io/java-rainbow-sdk/org/rainbow/sdk/ChangeTrustOperation.Builder.html) | [Go](https://godoc.org/github.com/rainbow/go/build#ChangeTrustBuilder)
 
-创建，更新或删除信任线。有关信任线的更多信息，请参阅[资产文档](https://stellar-docs.overcat.me/guides/concepts/assets.html)。
+创建，更新或删除信任线。有关信任线的更多信息，请参阅资产文档
 
 阈值等级：中
 
@@ -258,12 +258,12 @@
 |CHANGE_TRUST_MALFORMED| -1| 输入的参数不正确。 |
 |CHANGE_TRUST_NO_ISSUER| -2| 无法找到资产的发行人。 |
 |CHANGE_TRUST_INVALID_LIMIT| -3| 将 `limit` 设置为该值会导致该账户无法满足购买负载或现有资产的持有数量的限制。 |
-|CHANGE_TRUST_LOW_RESERVE| -4| 该账户的 XLM 余额或售出负债不足以使该账户能够新增一个子条目。每添加一个新的信任线都会增加账户需要持有的最低账户余额。 |
+|CHANGE_TRUST_LOW_RESERVE| -4| 该账户的 RBC 余额或售出负债不足以使该账户能够新增一个子条目。每添加一个新的信任线都会增加账户需要持有的最低账户余额。 |
 
 ## Allow Trust(允许信任) <span id="allow-trust">
-[JavaScript](http://stellar.github.io/js-stellar-sdk/Operation.html#.allowTrust) | [Java](http://stellar.github.io/java-stellar-sdk/org/stellar/sdk/AllowTrustOperation.Builder.html) | [Go](https://godoc.org/github.com/stellar/go/build#AllowTrustBuilder)
+[JavaScript](http://rainbow.github.io/js-rainbow-sdk/Operation.html#.allowTrust) | [Java](http://rainbow.github.io/java-rainbow-sdk/org/rainbow/sdk/AllowTrustOperation.Builder.html) | [Go](https://godoc.org/github.com/rainbow/go/build#AllowTrustBuilder)
 
-设置现有信任线的授权(`authorized`)标志。这个操作只能由信任线中的[资产](./assets.md)的发行账户调用，并且只有在发行账户上启用了 `AUTHORIZATION REQUIRED` 时(最少需要满足这个要求)才能调用。
+设置现有信任线的授权(`authorized`)标志。这个操作只能由信任线中的[资产](assets)的发行账户调用，并且只有在发行账户上启用了 `AUTHORIZATION REQUIRED` 时(最少需要满足这个要求)才能调用。
 
 发行账户只有在启用了 `AUTH_REVOCABLE_FLAG` 标识后才能清除其它用户的  `authorized` 标识，否者只能启用其它用户的 `authorized` 标识
 
@@ -289,9 +289,9 @@
 |ALLOW_TRUST_CANT_REVOKE| -4| 源账户正试图撤消对 `trustor` 的信任线的授权，但它不能这样做。 |
 
 ## Account Merge(账户合并 <span id="account-merge">
-[JavaScript](http://stellar.github.io/js-stellar-sdk/Operation.html#.accountMerge) | [Java](http://stellar.github.io/java-stellar-sdk/org/stellar/sdk/AccountMergeOperation.Builder.html) | [Go](https://godoc.org/github.com/stellar/go/build#AccountMergeBuilder)
+[JavaScript](http://rainbow.github.io/js-rainbow-sdk/Operation.html#.accountMerge) | [Java](http://rainbow.github.io/java-rainbow-sdk/org/rainbow/sdk/AccountMergeOperation.Builder.html) | [Go](https://godoc.org/github.com/rainbow/go/build#AccountMergeBuilder)
 
-将源账户中的所有原生资产(即源账户持有的 XLM)转移到另一个账户，并且将源账户从总账中移除。
+将源账户中的所有原生资产(即源账户持有的 RBC)转移到另一个账户，并且将源账户从总账中移除。
 
 阈值等级：高
 
@@ -299,7 +299,7 @@
 
 |参数| 类型| 描述|
 | --- | --- | --- |
-|Destination| account ID| 该账户将会收到源账户的所有 XLM。 |
+|Destination| account ID| 该账户将会收到源账户的所有 RBC。 |
 
 可能发送的错误：
 
@@ -310,10 +310,10 @@
 |ACCOUNT_MERGE_IMMUTABLE_SET| -3| 源账户启用了 `AUTH_IMMUTABLE` 标识。 |
 |ACCOUNT_MERGE_HAS_SUB_ENTRIES | -4| 源账户有信任线或订单。 |
 |ACCOUNT_MERGE_SEQNUM_TOO_FAR | -5| 源账户的序列号过大。它必须小于 `(ledgerSeq << 32) = (ledgerSeq * 0x100000000)`。*(协议版本 10 及以上)* |
-|ACCOUNT_MERGE_DEST_FULL| -6| `destination` 收到源账户的资产后将无法满足自身的 Lumens 购买负债。(协议版本 10 及以上)* |
+|ACCOUNT_MERGE_DEST_FULL| -6| `destination` 收到源账户的资产后将无法满足自身的 waterdrop 购买负债。(协议版本 10 及以上)* |
 
 ## Inflation(通货膨胀) <span id="inflation">
-[JavaScript](http://stellar.github.io/js-stellar-sdk/Operation.html#.inflation) | [Java](http://stellar.github.io/java-stellar-sdk/org/stellar/sdk/InflationOperation.html) | [Go](https://godoc.org/github.com/stellar/go/build#InflationBuilder)
+[JavaScript](http://rainbow.github.io/js-rainbow-sdk/Operation.html#.inflation) | [Java](http://rainbow.github.io/java-rainbow-sdk/org/rainbow/sdk/InflationOperation.html) | [Go](https://godoc.org/github.com/rainbow/go/build#InflationBuilder)
 
 通过该操作执行通胀。
 
@@ -328,11 +328,11 @@
 |INFLATION_NOT_TIME| -1| 每周只能执行一次通胀，这个错误意味着还未到执行新一轮通胀的时间。 |
 
 ## Manage Data(管理数据条目) <span id="manage-data">
-[JavaScript](http://stellar.github.io/js-stellar-sdk/Operation.html#.manageData) | [Java](http://stellar.github.io/java-stellar-sdk/org/stellar/sdk/ManageDataOperation.Builder.html) | [Go](https://godoc.org/github.com/stellar/go/build#ManageDataBuilder)
+[JavaScript](http://rainbow.github.io/js-rainbow-sdk/Operation.html#.manageData) | [Java](http://rainbow.github.io/java-rainbow-sdk/org/rainbow/sdk/ManageDataOperation.Builder.html) | [Go](https://godoc.org/github.com/rainbow/go/build#ManageDataBuilder)
 
 允许您设置、修改或删除特定账户上的数据条目(键/值对)。一个账户可以设置任意数量的数据条目。每添加一个数据条目都会增加账户需要持有的最低账户余额。
 
-数据对可以用于各种应用程序中，但它们并不被 Stellar 的核心协议所使用。
+数据对可以用于各种应用程序中，但它们并不被 Rainbow 的核心协议所使用。
 
 阈值等级：中
 
@@ -349,11 +349,11 @@
 | ----- | ---- | ------|
 |MANAGE_DATA_NOT_SUPPORTED_YET| -1| 当前网络尚未升级协议。这个失败意味当前网络尚不支持这个操作。 |
 |MANAGE_DATA_NAME_NOT_FOUND| -2| 试图删除一个不存在数据条目。如果您将一个数据条目的值设为空，但是这个账户中并不存在该键(Name)便会发送这样的错误。 |
-|MANAGE_DATA_LOW_RESERVE| -3| 该账户的 XLM 余额或售出负债不足以使该账户能够添加一个数据条目。每添加一个数据条目都会增加帐户需要持有的最低账户余额。 |
+|MANAGE_DATA_LOW_RESERVE| -3| 该账户的 RBC 余额或售出负债不足以使该账户能够添加一个数据条目。每添加一个数据条目都会增加帐户需要持有的最低账户余额。 |
 |MANAGE_DATA_INVALID_NAME| -4| 键(Name)是无效的字符串。 |
 
 ## Bump Sequence(增大序列号) <span id="bump-sequence">
-[JavaScript](http://stellar.github.io/js-stellar-sdk/Operation.html#.bumpSequence) | [Java](http://stellar.github.io/java-stellar-sdk/org/stellar/sdk/BumpSequenceOperation.Builder.html) | [Go](https://godoc.org/github.com/stellar/go/build#BumpSequenceBuilder)
+[JavaScript](http://rainbow.github.io/js-rainbow-sdk/Operation.html#.bumpSequence) | [Java](http://rainbow.github.io/java-rainbow-sdk/org/rainbow/sdk/BumpSequenceOperation.Builder.html) | [Go](https://godoc.org/github.com/rainbow/go/build#BumpSequenceBuilder)
 
 *仅在协议版本 10 及以上版本中可用*
 

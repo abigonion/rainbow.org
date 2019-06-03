@@ -1,13 +1,15 @@
 import React from 'react'
 import styled from 'styled-components'
 import { columns, container, media } from '../styles'
-
+import intl from 'react-intl-universal'
 const SocialLink = ({ src, href, children }) => (
   <Link src={src} href={href}>
     {children}
   </Link>
 )
-
+const changeLang = () => {
+  window.location =intl.get("lang")
+}
 export default props => (
   <Footer>
     <Container wide={props.isDocPage}>
@@ -25,22 +27,20 @@ export default props => (
         <Column>
           <Heading>Product</Heading>
           <Links>
-            <Link href="/?">Overview</Link>
-            <Link href="/features">Features</Link>
+            <Link href={"/" + intl.get("lang-url")}>{intl.get("Overview")}</Link>
+            <Link href={"/features"+intl.get("lang-url")}>{intl.get("Features")}</Link>
           </Links>
         </Column>
         <Column>
           <Heading>Help</Heading>
           <Links>
-            <Link href="/support">Support</Link>
-            <Link href="/doc/get-started">Get started</Link>
-            <SocialLink src="/static/img/chat.png" href="/chat">
-              Chat
-            </SocialLink>
-            <Link href="/doc">Documentation</Link>
+            <Link href={"/support" + intl.get("lang-url")}>{intl.get("Support")}</Link>
+            <Link href={"/doc/get-started" + intl.get("lang-url")}>{intl.get("Get Started")}</Link>
+
+            <Link onClick={changeLang}>{intl.get("Change Lang")}</Link>
           </Links>
         </Column>
-        <Column>
+        {/* <Column>
           <Heading>Company</Heading>
           <Links>
             <Link href="https://blog.dataversioncontrol.com/">Blog</Link>
@@ -51,25 +51,25 @@ export default props => (
               Iterative.ai
             </SocialLink>
           </Links>
-        </Column>
+        </Column> */}
         <Column>
           <Heading>Social</Heading>
           <Links>
-            <SocialLink
+            {/* <SocialLink
               src="/static/img/twitter.png"
               href="https://twitter.com/DVCorg"
             >
               Twitter
-            </SocialLink>
+            </SocialLink> */}
             <SocialLink
               src="/static/img/github.png"
               href="https://github.com/iterative/dvc"
             >
               Github
             </SocialLink>
-            <SocialLink src="/static/img/discord.png" href="/chat">
+            {/* <SocialLink src="/static/img/discord.png" href="/chat">
               Discord
-            </SocialLink>
+            </SocialLink> */}
           </Links>
         </Column>
       </Columns>

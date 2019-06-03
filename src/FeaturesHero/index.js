@@ -1,11 +1,10 @@
 import React from 'react'
 import styled from 'styled-components'
-
+import intl from 'react-intl-universal'
 export default ({}) => (
   <FeaturesHero>
     <Heading>
-      DVC brings agility, reproducibility, and collaboration into your existing
-      data science workflow
+      {intl.get('feature title')}
     </Heading>
   </FeaturesHero>
 )

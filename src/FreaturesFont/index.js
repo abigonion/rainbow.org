@@ -98,7 +98,7 @@ export class FreaturesFont extends Component {
                                 alt="HDFS, Hive & Apache Spark"
                             />
                         </Icon>
-                        <Name>{intl.get("Connects banks")}</Name>
+                        <Name>{intl.get("connects banks")}</Name>
                         <Description>
                             {intl.get("infrastructure")}
                         </Description>

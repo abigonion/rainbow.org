@@ -46,7 +46,7 @@ export default class LandingHero extends Component {
       <Wrapper>
         <About>
           <Title>
-            {intl.get("Rainbow")}            
+            {intl.get("Rainbow")}
             <br />
             {intl.get("Customizable")}
             <br />
@@ -58,23 +58,26 @@ export default class LandingHero extends Component {
                 Get started
               </GetStartedButton>
             </OnlyMobile>
-            <OnlyDesktop>
+            <WatchButton>
               <DownloadButton />
-            </OnlyDesktop>
-            <WatchButton onClick={this.scrollToVideo}>
-              <ActionIcon>
-                <img
-                  src="/static/img/play-icon.svg"
-                  alt="Watch video"
-                  width={20}
-                  height={20}
-                />
-              </ActionIcon>
-              <ActionInner>
-                <Action>Watch video</Action>
-                <Description>How it works</Description>
-              </ActionInner>
             </WatchButton>
+            <OnlyDesktop>
+              <WatchButton onClick={this.scrollToVideo}>
+                <ActionIcon>
+                  <img
+                    src="/static/img/play-icon.svg"
+                    alt="Watch video"
+                    width={20}
+                    height={20}
+                  />
+                </ActionIcon>
+                <ActionInner>
+                  <Action>Watch video</Action>
+                  <Description>How it works</Description>
+                </ActionInner>
+              </WatchButton>
+            </OnlyDesktop>
+
           </Buttons>
 
           <Github>
@@ -85,19 +88,20 @@ export default class LandingHero extends Component {
         <OnlyDesktop>
           <Commands>
             <Command active={activeCommand === 0}>
-              <Line>$ dvc add images</Line>
+              <Line>{intl.get("Manage")}</Line>
             </Command>
             <Command active={activeCommand === 1}>
-              <Line>$ dvc run -d images -o model.p cnn.py</Line>
+              <Line>{intl.get("Lower")}</Line>
             </Command>
             <Command active={activeCommand === 2}>
-              <Line>$ dvc remote add myrepo s3://mybucket</Line>
+              <Line>{intl.get("mobile")}</Line>
             </Command>
             <Command active={activeCommand === 3}>
-              <Line>$ dvc push</Line>
+              <Line>{intl.get("Increase")}</Line>
             </Command>
           </Commands>
         </OnlyDesktop>
+
       </Wrapper>
     )
   }

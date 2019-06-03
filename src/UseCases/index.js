@@ -5,13 +5,13 @@ import { media, container, OnlyDesktop, OnlyMobile } from '../styles'
 import { default as YoutubeVideo } from '../Video'
 import { Element } from 'react-scroll'
 import TextCollapse from '../TextCollapse'
-
+import intl from 'react-intl-universal'
 const Heading1 = () => (
   <Top>
     <Icon>
       <img src="/static/img/save-reprro.svg" width={30} height={30} />
     </Icon>
-    <Title>Save and reproduce your experiments</Title>
+    <Title>{intl.get("increase payment")}</Title>
   </Top>
 )
 
@@ -20,7 +20,7 @@ const Heading2 = () => (
     <Icon>
       <img src="/static/img/git-icon.svg" width={30} height={30} />
     </Icon>
-    <Title>Version control models and data</Title>
+    <Title>{intl.get("payment delivery for banks")}</Title>
   </Top>
 )
 
@@ -29,32 +29,25 @@ const Heading3 = () => (
     <Icon>
       <img src="/static/img/share.svg" width={30} height={31} />
     </Icon>
-    <Title>Establish workflow for deployment & collaboration</Title>
+    <Title>{intl.get("Learn more about Rainbow’s technology")}</Title>
   </Top>
 )
 
 const Description1 = () => (
   <Description>
-    At any time, fetch the full context about any experiment you or your team
-    has run. DVC guarantees that all files and metrics will be consistent and in
-    the right place to reproduce the experiment or use it as a baseline for a
-    new iteration.
+    {intl.get("increase payment volume")}
   </Description>
 )
 
 const Description2 = () => (
   <Description>
-    DVC keeps metafiles in Git instead of Google Docs to describe and version
-    control your data sets and models. DVC supports a variety of external
-    storage types as a remote cache for large files.
+    {intl.get('fx and payment delivery for banks')}
   </Description>
 )
 
 const Description3 = () => (
   <Description>
-    DVC defines rules and processes for working effectively and consistently as
-    a team. It serves as a protocol for collaboration, sharing results, and
-    getting and running a finished model in a production environment.
+    {intl.get("about Rainbow’s technology")}
   </Description>
 )
 

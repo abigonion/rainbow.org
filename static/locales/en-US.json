@@ -9,13 +9,14 @@
     "Support" : "Support",
     "Get Started" : "Get Started",
     "Change Lang" : "Chinese",
+    "Overview" : "Overview",
 
 
     "Full Features" : "Full Features",
     "FINANCE WITH A MISSION" : "FINANCE WITH A MISSION",
     
     "Title" : "Send money across borders quickly · Rainbow",
-    "Customizable" : "Customizable payments.",
+    "Customizable" : "Just a few seconds.",
     "Send money across borders quickly" : "Send money across borders quickly",
     "Rainbow" : "Rainbow",
     "Future" : "THE FUTURE OF BANKING IS HERE",
@@ -35,7 +36,9 @@
     "ColumnOne_3_3" : "●International reach with a single integration",
     "ColumnOne_3_4" : "●Great for micropayments: A $0.01 fee handles ~600,000 transactions",
     "ColumnOne_3_5" : "●Automatic currency exchange",
-    "Subscribe" : "Subscribe for updates. We won&#39;t spam you.",
+    "Subscribe" : "Subscribe for updates. We won't spam you.",
+
+    "feature title" : "Rainbow has a team of top technology and financial professionals.",
     "Storage agnostic" : "Storage agnostic",
     "Use S3" : "Use S3, Azure, GCP, SSH, SFTP, Aliyun OSS rsync or anynetwork-attached storage to store data. The list of supportedprotocols is constantly expanding.",
     "technology" : "Blockchain technology",
@@ -53,5 +56,18 @@
     "connects banks" : "Connects banks",
     "infrastructure" : "Today the world sends more than $155 trillion* across borders. Yet, the underlying infrastructure is dated and flawed. Rainbow connects banks, payment providers and digital asset exchanges via Rainbow to provide one frictionless experience to send money globally.",
     "Track failures" : "Track failures",
-    "Bad ideas" : "Bad ideas can sometimes bring more information to colleagues thanthe successful ones. Retaining knowledge of failed attempts can savetime in the future. Rainbow is built to track everything in areproducible and easily accessible way." 
+    "Bad ideas" : "Bad ideas can sometimes bring more information to colleagues thanthe successful ones. Retaining knowledge of failed attempts can savetime in the future. Rainbow is built to track everything in areproducible and easily accessible way.",
+    "try" : "Ready to give it a try?",
+
+    "Manage" : "Manage more micropayments for less",
+    "Lower" : "Lower the cost of remittances",
+    "mobile" : "Be a mobile money leader",
+    "Increase" : "Increase reach through mobile branches",
+    "Questions" : "Questions, feedback, or just need to get in touch?",
+    "increase payment volume" : "Offer differentiated, real-time cross-border payments services to customers.Integrate once to connect with all financial institutions using Rainbow.Access real-time payments with transparency of fees/rates and certainty of settlement.",
+    "fx and payment delivery for banks" : "deliver payments for banks that do not want to build and maintain many nostro accounts.Offer corporates value-added services including the ability to send large volumes of on-demand payments globally.Provide consumers low-cost remittance services with complete transparency, traceability and real-time settlement.",
+    "increase payment" : "increase payment volume",
+    "payment delivery for banks" : "payment delivery for banks",
+    "about Rainbow’s technology" : "Learn more about Rainbow’s technology, solutions and products. Explore how different industry participants can integrate with Rainbow to bypass structural inefficiencies to lower costs, improve processing capabilities and reduce settlement risk.",
+    "Learn more about Rainbow’s technology" : "Learn more about Rainbow’s technology"
 }

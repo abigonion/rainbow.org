@@ -12,10 +12,10 @@ import Page from '../src/Page'
 import Hero from '../src/Hero'
 import TrySection from '../src/TrySection'
 import Popover from '../src/Popover/Popover'
-
+import intl from 'react-intl-universal'
 const HeadInjector = () => (
   <Head>
-    <title>Support | Machine Learning Version Control System</title>
+    <title>Support</title>
   </Head>
 )
 
@@ -24,13 +24,13 @@ export default () => (
     <HeadInjector />
     <Hero>
       <SupportHero>
-        <Heading>Questions, feedback, or just need to get in touch?</Heading>
+        <Heading>{intl.get("Questions")}</Heading>
       </SupportHero>
     </Hero>
 
     <Container>
       <Features>
-        <Feature>
+        {/* <Feature>
           <FeatureHeading>
             <Icon url="/static/img/support/chat.svg" color="#945dd6" />
             <Name>Slack-like Chat</Name>
@@ -63,7 +63,7 @@ export default () => (
               </Popover>
             </OnlyDesktop>
           </FlexRow>
-        </Feature>
+        </Feature> */}
 
         <Feature>
           <FeatureHeading>
@@ -82,7 +82,7 @@ export default () => (
           </Link>
         </Feature>
 
-        <Feature>
+        {/* <Feature>
           <FeatureHeading>
             <Icon url="/static/img/support/forum.svg" color="#f46837" />
             <Name>Forum</Name>
@@ -97,7 +97,7 @@ export default () => (
           <Link href="https://discuss.dvc.org" target="_blank">
             <Button color="#f46837">Go To Forum</Button>
           </Link>
-        </Feature>
+        </Feature> */}
 
         <Feature>
           <FeatureHeading>
@@ -106,14 +106,14 @@ export default () => (
           </FeatureHeading>
           <Description>
             Don’t hesitate to shoot us an email at{' '}
-            <Link href="mailto:support@dvc.org">
+            <Link href="mailto:support@lhtech.info">
               <Mark text={'#945dd6'} bg={'#FFFFFF'}>
-                support@dvc.org
+                support@lhtech.info
               </Mark>
             </Link>{' '}
             with any questions.
           </Description>
-          <Link href="mailto:support@dvc.org">
+          <Link href="mailto:support@lhtech.info">
             <Button color="#945dd6">Drop Us a Line</Button>
           </Link>
         </Feature>

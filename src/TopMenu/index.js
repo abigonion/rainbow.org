@@ -51,8 +51,9 @@ class TopMenu extends Component {
         <Container scrolled={isDocPage || scrolled} wide={isDocPage}>
           <Logo href="/">
             <img
-              src="/static/img/logo.png"
-              alt="dvc.org"
+              // src="/static/img/logo.png"
+              //logo修改
+              alt="lhtech.info"
               width={36}
               height={23}
             />
