@@ -56,11 +56,11 @@ export default class HamburgerMenu extends Component {
             <Section>
               <Top>
                 <Logo href="/">
-                  {/* <img
-                    src="/static/img/logo_white.png" 
+                  <img
+                    src="/static/img/logo_white-lin.png" 
                     // logo修改
                     alt="dvc.org"
-                    width={34} */}
+                    width={34}
                   />
                 </Logo>
               </Top>

@@ -13,9 +13,9 @@ export default class GithubLine extends Component {
     count: `–––`
   }
 
-  componentWillMount() {
-    axios.get(api).then(this.process)
-  }
+  // componentWillMount() {
+  //   axios.get(api).then(this.process)
+  // }
 
   process = res => {
     const count = res.data.stargazers_count

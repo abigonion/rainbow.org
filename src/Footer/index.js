@@ -16,7 +16,8 @@ export default props => (
       <Top>
         <Logo href="/">
           <img
-            src="/static/img/logo_white.png"
+          //logo修改
+            src="/static/img/logo_white-lin.png"
             alt="site logo"
             width={36}
             height={23}
