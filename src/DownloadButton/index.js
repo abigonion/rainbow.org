@@ -75,8 +75,8 @@ export default class DownloadButton extends Component {
     let OSName = UNKNOWN
     if (!isClient) return OSName
 
-    if (navigator.userAgent.indexOf('android') !== -1) OSName = Android
-    if (navigator.userAgent.indexOf('iphone') !== -1) OSName = IOS
+    if (navigator.userAgent.indexOf('Android') !== -1) OSName = Android
+    if (navigator.userAgent.indexOf('ios') !== -1) OSName = IOS
     if (navigator.userAgent.indexOf('Linux') !== -1) OSName = LINUX
 
     return OSName
