@@ -23,7 +23,7 @@ app.prepare().then(() => {
     //根据不同的域名host访问不同的doc目录
     if (req.headers.host === 'man.dvc.org') {
       const doc_pathname = "/doc/commands-reference" + pathname
-      res.writeHead(301, { 'Location': "https://dvc.org" + doc_pathname })
+      res.writeHead(301, { 'Location': "http://lhtech.info" + doc_pathname })
       res.end()
     } else if (req.headers.host === 'pycon2019.dvc.org') {
       res.writeHead(301, { 'Location': "https://dvc.org/doc/get-started" })
