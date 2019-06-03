@@ -1,0 +1,1272 @@
+/root/rainbow.org/node_modules/next/dist/server/next-server.js:753
+        throw new Error("Could not find a valid build in the '".concat(this.distDir, "' directory! Try building your app with 'next build' before starting the server."));
+        ^
+
+Error: Could not find a valid build in the '/root/rainbow.org/.next' directory! Try building your app with 'next build' before starting the server.
+    at Server.readBuildId (/root/rainbow.org/node_modules/next/dist/server/next-server.js:753:15)
+    at new Server (/root/rainbow.org/node_modules/next/dist/server/next-server.js:80:25)
+    at module.exports (/root/rainbow.org/node_modules/next/dist/server/next.js:6:10)
+    at Object.<anonymous> (/root/rainbow.org/server.js:12:13)
+    at Module._compile (internal/modules/cjs/loader.js:721:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:732:10)
+    at Module.load (internal/modules/cjs/loader.js:620:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:560:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:552:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:774:12)
+npm ERR! code ELIFECYCLE
+npm ERR! errno 1
+npm ERR! website@1.0.0 start: `NODE_ENV=production node server.js`
+npm ERR! Exit status 1
+npm ERR! 
+npm ERR! Failed at the website@1.0.0 start script.
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     /root/.npm/_logs/2019-06-03T06_23_56_973Z-debug.log
+/root/rainbow.org/node_modules/next/dist/server/next-server.js:753
+        throw new Error("Could not find a valid build in the '".concat(this.distDir, "' directory! Try building your app with 'next build' before starting the server."));
+        ^
+
+Error: Could not find a valid build in the '/root/rainbow.org/.next' directory! Try building your app with 'next build' before starting the server.
+    at Server.readBuildId (/root/rainbow.org/node_modules/next/dist/server/next-server.js:753:15)
+    at new Server (/root/rainbow.org/node_modules/next/dist/server/next-server.js:80:25)
+    at module.exports (/root/rainbow.org/node_modules/next/dist/server/next.js:6:10)
+    at Object.<anonymous> (/root/rainbow.org/server.js:12:13)
+    at Module._compile (internal/modules/cjs/loader.js:721:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:732:10)
+    at Module.load (internal/modules/cjs/loader.js:620:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:560:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:552:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:774:12)
+npm ERR! code ELIFECYCLE
+npm ERR! errno 1
+npm ERR! website@1.0.0 start: `NODE_ENV=production node server.js`
+npm ERR! Exit status 1
+npm ERR! 
+npm ERR! Failed at the website@1.0.0 start script.
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     /root/.npm/_logs/2019-06-03T06_24_02_090Z-debug.log
+/root/rainbow.org/node_modules/next/dist/server/next-server.js:753
+        throw new Error("Could not find a valid build in the '".concat(this.distDir, "' directory! Try building your app with 'next build' before starting the server."));
+        ^
+
+Error: Could not find a valid build in the '/root/rainbow.org/.next' directory! Try building your app with 'next build' before starting the server.
+    at Server.readBuildId (/root/rainbow.org/node_modules/next/dist/server/next-server.js:753:15)
+    at new Server (/root/rainbow.org/node_modules/next/dist/server/next-server.js:80:25)
+    at module.exports (/root/rainbow.org/node_modules/next/dist/server/next.js:6:10)
+    at Object.<anonymous> (/root/rainbow.org/server.js:12:13)
+    at Module._compile (internal/modules/cjs/loader.js:721:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:732:10)
+    at Module.load (internal/modules/cjs/loader.js:620:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:560:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:552:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:774:12)
+npm ERR! code ELIFECYCLE
+npm ERR! errno 1
+npm ERR! website@1.0.0 start: `NODE_ENV=production node server.js`
+npm ERR! Exit status 1
+npm ERR! 
+npm ERR! Failed at the website@1.0.0 start script.
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     /root/.npm/_logs/2019-06-03T06_24_07_261Z-debug.log
+/root/rainbow.org/node_modules/next/dist/server/next-server.js:753
+        throw new Error("Could not find a valid build in the '".concat(this.distDir, "' directory! Try building your app with 'next build' before starting the server."));
+        ^
+
+Error: Could not find a valid build in the '/root/rainbow.org/.next' directory! Try building your app with 'next build' before starting the server.
+    at Server.readBuildId (/root/rainbow.org/node_modules/next/dist/server/next-server.js:753:15)
+    at new Server (/root/rainbow.org/node_modules/next/dist/server/next-server.js:80:25)
+    at module.exports (/root/rainbow.org/node_modules/next/dist/server/next.js:6:10)
+    at Object.<anonymous> (/root/rainbow.org/server.js:12:13)
+    at Module._compile (internal/modules/cjs/loader.js:721:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:732:10)
+    at Module.load (internal/modules/cjs/loader.js:620:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:560:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:552:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:774:12)
+npm ERR! code ELIFECYCLE
+npm ERR! errno 1
+npm ERR! website@1.0.0 start: `NODE_ENV=production node server.js`
+npm ERR! Exit status 1
+npm ERR! 
+npm ERR! Failed at the website@1.0.0 start script.
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     /root/.npm/_logs/2019-06-03T06_24_12_377Z-debug.log
+/root/rainbow.org/node_modules/next/dist/server/next-server.js:753
+        throw new Error("Could not find a valid build in the '".concat(this.distDir, "' directory! Try building your app with 'next build' before starting the server."));
+        ^
+
+Error: Could not find a valid build in the '/root/rainbow.org/.next' directory! Try building your app with 'next build' before starting the server.
+    at Server.readBuildId (/root/rainbow.org/node_modules/next/dist/server/next-server.js:753:15)
+    at new Server (/root/rainbow.org/node_modules/next/dist/server/next-server.js:80:25)
+    at module.exports (/root/rainbow.org/node_modules/next/dist/server/next.js:6:10)
+    at Object.<anonymous> (/root/rainbow.org/server.js:12:13)
+    at Module._compile (internal/modules/cjs/loader.js:721:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:732:10)
+    at Module.load (internal/modules/cjs/loader.js:620:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:560:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:552:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:774:12)
+npm ERR! code ELIFECYCLE
+npm ERR! errno 1
+npm ERR! website@1.0.0 start: `NODE_ENV=production node server.js`
+npm ERR! Exit status 1
+npm ERR! 
+npm ERR! Failed at the website@1.0.0 start script.
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     /root/.npm/_logs/2019-06-03T06_24_17_499Z-debug.log
+/root/rainbow.org/node_modules/next/dist/server/next-server.js:753
+        throw new Error("Could not find a valid build in the '".concat(this.distDir, "' directory! Try building your app with 'next build' before starting the server."));
+        ^
+
+Error: Could not find a valid build in the '/root/rainbow.org/.next' directory! Try building your app with 'next build' before starting the server.
+    at Server.readBuildId (/root/rainbow.org/node_modules/next/dist/server/next-server.js:753:15)
+    at new Server (/root/rainbow.org/node_modules/next/dist/server/next-server.js:80:25)
+    at module.exports (/root/rainbow.org/node_modules/next/dist/server/next.js:6:10)
+    at Object.<anonymous> (/root/rainbow.org/server.js:12:13)
+    at Module._compile (internal/modules/cjs/loader.js:721:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:732:10)
+    at Module.load (internal/modules/cjs/loader.js:620:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:560:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:552:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:774:12)
+npm ERR! code ELIFECYCLE
+npm ERR! errno 1
+npm ERR! website@1.0.0 start: `NODE_ENV=production node server.js`
+npm ERR! Exit status 1
+npm ERR! 
+npm ERR! Failed at the website@1.0.0 start script.
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     /root/.npm/_logs/2019-06-03T06_24_22_618Z-debug.log
+/root/rainbow.org/node_modules/next/dist/server/next-server.js:753
+        throw new Error("Could not find a valid build in the '".concat(this.distDir, "' directory! Try building your app with 'next build' before starting the server."));
+        ^
+
+Error: Could not find a valid build in the '/root/rainbow.org/.next' directory! Try building your app with 'next build' before starting the server.
+    at Server.readBuildId (/root/rainbow.org/node_modules/next/dist/server/next-server.js:753:15)
+    at new Server (/root/rainbow.org/node_modules/next/dist/server/next-server.js:80:25)
+    at module.exports (/root/rainbow.org/node_modules/next/dist/server/next.js:6:10)
+    at Object.<anonymous> (/root/rainbow.org/server.js:12:13)
+    at Module._compile (internal/modules/cjs/loader.js:721:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:732:10)
+    at Module.load (internal/modules/cjs/loader.js:620:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:560:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:552:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:774:12)
+npm ERR! code ELIFECYCLE
+npm ERR! errno 1
+npm ERR! website@1.0.0 start: `NODE_ENV=production node server.js`
+npm ERR! Exit status 1
+npm ERR! 
+npm ERR! Failed at the website@1.0.0 start script.
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     /root/.npm/_logs/2019-06-03T06_24_28_076Z-debug.log
+/root/rainbow.org/node_modules/next/dist/server/next-server.js:753
+        throw new Error("Could not find a valid build in the '".concat(this.distDir, "' directory! Try building your app with 'next build' before starting the server."));
+        ^
+
+Error: Could not find a valid build in the '/root/rainbow.org/.next' directory! Try building your app with 'next build' before starting the server.
+    at Server.readBuildId (/root/rainbow.org/node_modules/next/dist/server/next-server.js:753:15)
+    at new Server (/root/rainbow.org/node_modules/next/dist/server/next-server.js:80:25)
+    at module.exports (/root/rainbow.org/node_modules/next/dist/server/next.js:6:10)
+    at Object.<anonymous> (/root/rainbow.org/server.js:12:13)
+    at Module._compile (internal/modules/cjs/loader.js:721:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:732:10)
+    at Module.load (internal/modules/cjs/loader.js:620:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:560:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:552:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:774:12)
+npm ERR! code ELIFECYCLE
+npm ERR! errno 1
+npm ERR! website@1.0.0 start: `NODE_ENV=production node server.js`
+npm ERR! Exit status 1
+npm ERR! 
+npm ERR! Failed at the website@1.0.0 start script.
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     /root/.npm/_logs/2019-06-03T06_24_32_932Z-debug.log
+/root/rainbow.org/node_modules/next/dist/server/next-server.js:753
+        throw new Error("Could not find a valid build in the '".concat(this.distDir, "' directory! Try building your app with 'next build' before starting the server."));
+        ^
+
+Error: Could not find a valid build in the '/root/rainbow.org/.next' directory! Try building your app with 'next build' before starting the server.
+    at Server.readBuildId (/root/rainbow.org/node_modules/next/dist/server/next-server.js:753:15)
+    at new Server (/root/rainbow.org/node_modules/next/dist/server/next-server.js:80:25)
+    at module.exports (/root/rainbow.org/node_modules/next/dist/server/next.js:6:10)
+    at Object.<anonymous> (/root/rainbow.org/server.js:12:13)
+    at Module._compile (internal/modules/cjs/loader.js:721:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:732:10)
+    at Module.load (internal/modules/cjs/loader.js:620:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:560:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:552:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:774:12)
+npm ERR! code ELIFECYCLE
+npm ERR! errno 1
+npm ERR! website@1.0.0 start: `NODE_ENV=production node server.js`
+npm ERR! Exit status 1
+npm ERR! 
+npm ERR! Failed at the website@1.0.0 start script.
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     /root/.npm/_logs/2019-06-03T06_24_38_052Z-debug.log
+/root/rainbow.org/node_modules/next/dist/server/next-server.js:753
+        throw new Error("Could not find a valid build in the '".concat(this.distDir, "' directory! Try building your app with 'next build' before starting the server."));
+        ^
+
+Error: Could not find a valid build in the '/root/rainbow.org/.next' directory! Try building your app with 'next build' before starting the server.
+    at Server.readBuildId (/root/rainbow.org/node_modules/next/dist/server/next-server.js:753:15)
+    at new Server (/root/rainbow.org/node_modules/next/dist/server/next-server.js:80:25)
+    at module.exports (/root/rainbow.org/node_modules/next/dist/server/next.js:6:10)
+    at Object.<anonymous> (/root/rainbow.org/server.js:12:13)
+    at Module._compile (internal/modules/cjs/loader.js:721:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:732:10)
+    at Module.load (internal/modules/cjs/loader.js:620:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:560:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:552:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:774:12)
+npm ERR! code ELIFECYCLE
+npm ERR! errno 1
+npm ERR! website@1.0.0 start: `NODE_ENV=production node server.js`
+npm ERR! Exit status 1
+npm ERR! 
+npm ERR! Failed at the website@1.0.0 start script.
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     /root/.npm/_logs/2019-06-03T06_24_43_181Z-debug.log
+/root/rainbow.org/node_modules/next/dist/server/next-server.js:753
+        throw new Error("Could not find a valid build in the '".concat(this.distDir, "' directory! Try building your app with 'next build' before starting the server."));
+        ^
+
+Error: Could not find a valid build in the '/root/rainbow.org/.next' directory! Try building your app with 'next build' before starting the server.
+    at Server.readBuildId (/root/rainbow.org/node_modules/next/dist/server/next-server.js:753:15)
+    at new Server (/root/rainbow.org/node_modules/next/dist/server/next-server.js:80:25)
+    at module.exports (/root/rainbow.org/node_modules/next/dist/server/next.js:6:10)
+    at Object.<anonymous> (/root/rainbow.org/server.js:12:13)
+    at Module._compile (internal/modules/cjs/loader.js:721:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:732:10)
+    at Module.load (internal/modules/cjs/loader.js:620:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:560:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:552:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:774:12)
+npm ERR! code ELIFECYCLE
+npm ERR! errno 1
+npm ERR! website@1.0.0 start: `NODE_ENV=production node server.js`
+npm ERR! Exit status 1
+npm ERR! 
+npm ERR! Failed at the website@1.0.0 start script.
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     /root/.npm/_logs/2019-06-03T06_24_48_429Z-debug.log
+/root/rainbow.org/node_modules/next/dist/server/next-server.js:753
+        throw new Error("Could not find a valid build in the '".concat(this.distDir, "' directory! Try building your app with 'next build' before starting the server."));
+        ^
+
+Error: Could not find a valid build in the '/root/rainbow.org/.next' directory! Try building your app with 'next build' before starting the server.
+    at Server.readBuildId (/root/rainbow.org/node_modules/next/dist/server/next-server.js:753:15)
+    at new Server (/root/rainbow.org/node_modules/next/dist/server/next-server.js:80:25)
+    at module.exports (/root/rainbow.org/node_modules/next/dist/server/next.js:6:10)
+    at Object.<anonymous> (/root/rainbow.org/server.js:12:13)
+    at Module._compile (internal/modules/cjs/loader.js:721:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:732:10)
+    at Module.load (internal/modules/cjs/loader.js:620:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:560:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:552:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:774:12)
+npm ERR! code ELIFECYCLE
+npm ERR! errno 1
+npm ERR! website@1.0.0 start: `NODE_ENV=production node server.js`
+npm ERR! Exit status 1
+npm ERR! 
+npm ERR! Failed at the website@1.0.0 start script.
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     /root/.npm/_logs/2019-06-03T06_24_53_523Z-debug.log
+/root/rainbow.org/node_modules/next/dist/server/next-server.js:753
+        throw new Error("Could not find a valid build in the '".concat(this.distDir, "' directory! Try building your app with 'next build' before starting the server."));
+        ^
+
+Error: Could not find a valid build in the '/root/rainbow.org/.next' directory! Try building your app with 'next build' before starting the server.
+    at Server.readBuildId (/root/rainbow.org/node_modules/next/dist/server/next-server.js:753:15)
+    at new Server (/root/rainbow.org/node_modules/next/dist/server/next-server.js:80:25)
+    at module.exports (/root/rainbow.org/node_modules/next/dist/server/next.js:6:10)
+    at Object.<anonymous> (/root/rainbow.org/server.js:12:13)
+    at Module._compile (internal/modules/cjs/loader.js:721:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:732:10)
+    at Module.load (internal/modules/cjs/loader.js:620:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:560:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:552:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:774:12)
+npm ERR! code ELIFECYCLE
+npm ERR! errno 1
+npm ERR! website@1.0.0 start: `NODE_ENV=production node server.js`
+npm ERR! Exit status 1
+npm ERR! 
+npm ERR! Failed at the website@1.0.0 start script.
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     /root/.npm/_logs/2019-06-03T06_24_58_643Z-debug.log
+/root/rainbow.org/node_modules/next/dist/server/next-server.js:753
+        throw new Error("Could not find a valid build in the '".concat(this.distDir, "' directory! Try building your app with 'next build' before starting the server."));
+        ^
+
+Error: Could not find a valid build in the '/root/rainbow.org/.next' directory! Try building your app with 'next build' before starting the server.
+    at Server.readBuildId (/root/rainbow.org/node_modules/next/dist/server/next-server.js:753:15)
+    at new Server (/root/rainbow.org/node_modules/next/dist/server/next-server.js:80:25)
+    at module.exports (/root/rainbow.org/node_modules/next/dist/server/next.js:6:10)
+    at Object.<anonymous> (/root/rainbow.org/server.js:12:13)
+    at Module._compile (internal/modules/cjs/loader.js:721:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:732:10)
+    at Module.load (internal/modules/cjs/loader.js:620:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:560:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:552:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:774:12)
+npm ERR! code ELIFECYCLE
+npm ERR! errno 1
+npm ERR! website@1.0.0 start: `NODE_ENV=production node server.js`
+npm ERR! Exit status 1
+npm ERR! 
+npm ERR! Failed at the website@1.0.0 start script.
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     /root/.npm/_logs/2019-06-03T06_25_03_772Z-debug.log
+/root/rainbow.org/node_modules/next/dist/server/next-server.js:753
+        throw new Error("Could not find a valid build in the '".concat(this.distDir, "' directory! Try building your app with 'next build' before starting the server."));
+        ^
+
+Error: Could not find a valid build in the '/root/rainbow.org/.next' directory! Try building your app with 'next build' before starting the server.
+    at Server.readBuildId (/root/rainbow.org/node_modules/next/dist/server/next-server.js:753:15)
+    at new Server (/root/rainbow.org/node_modules/next/dist/server/next-server.js:80:25)
+    at module.exports (/root/rainbow.org/node_modules/next/dist/server/next.js:6:10)
+    at Object.<anonymous> (/root/rainbow.org/server.js:12:13)
+    at Module._compile (internal/modules/cjs/loader.js:721:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:732:10)
+    at Module.load (internal/modules/cjs/loader.js:620:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:560:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:552:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:774:12)
+npm ERR! code ELIFECYCLE
+npm ERR! errno 1
+npm ERR! website@1.0.0 start: `NODE_ENV=production node server.js`
+npm ERR! Exit status 1
+npm ERR! 
+npm ERR! Failed at the website@1.0.0 start script.
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     /root/.npm/_logs/2019-06-03T06_25_08_908Z-debug.log
+/root/rainbow.org/node_modules/next/dist/server/next-server.js:753
+        throw new Error("Could not find a valid build in the '".concat(this.distDir, "' directory! Try building your app with 'next build' before starting the server."));
+        ^
+
+Error: Could not find a valid build in the '/root/rainbow.org/.next' directory! Try building your app with 'next build' before starting the server.
+    at Server.readBuildId (/root/rainbow.org/node_modules/next/dist/server/next-server.js:753:15)
+    at new Server (/root/rainbow.org/node_modules/next/dist/server/next-server.js:80:25)
+    at module.exports (/root/rainbow.org/node_modules/next/dist/server/next.js:6:10)
+    at Object.<anonymous> (/root/rainbow.org/server.js:12:13)
+    at Module._compile (internal/modules/cjs/loader.js:721:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:732:10)
+    at Module.load (internal/modules/cjs/loader.js:620:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:560:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:552:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:774:12)
+npm ERR! code ELIFECYCLE
+npm ERR! errno 1
+npm ERR! website@1.0.0 start: `NODE_ENV=production node server.js`
+npm ERR! Exit status 1
+npm ERR! 
+npm ERR! Failed at the website@1.0.0 start script.
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     /root/.npm/_logs/2019-06-03T06_25_13_998Z-debug.log
+/root/rainbow.org/node_modules/next/dist/server/next-server.js:753
+        throw new Error("Could not find a valid build in the '".concat(this.distDir, "' directory! Try building your app with 'next build' before starting the server."));
+        ^
+
+Error: Could not find a valid build in the '/root/rainbow.org/.next' directory! Try building your app with 'next build' before starting the server.
+    at Server.readBuildId (/root/rainbow.org/node_modules/next/dist/server/next-server.js:753:15)
+    at new Server (/root/rainbow.org/node_modules/next/dist/server/next-server.js:80:25)
+    at module.exports (/root/rainbow.org/node_modules/next/dist/server/next.js:6:10)
+    at Object.<anonymous> (/root/rainbow.org/server.js:12:13)
+    at Module._compile (internal/modules/cjs/loader.js:721:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:732:10)
+    at Module.load (internal/modules/cjs/loader.js:620:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:560:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:552:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:774:12)
+npm ERR! code ELIFECYCLE
+npm ERR! errno 1
+npm ERR! website@1.0.0 start: `NODE_ENV=production node server.js`
+npm ERR! Exit status 1
+npm ERR! 
+npm ERR! Failed at the website@1.0.0 start script.
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     /root/.npm/_logs/2019-06-03T06_25_19_199Z-debug.log
+/root/rainbow.org/node_modules/next/dist/server/next-server.js:753
+        throw new Error("Could not find a valid build in the '".concat(this.distDir, "' directory! Try building your app with 'next build' before starting the server."));
+        ^
+
+Error: Could not find a valid build in the '/root/rainbow.org/.next' directory! Try building your app with 'next build' before starting the server.
+    at Server.readBuildId (/root/rainbow.org/node_modules/next/dist/server/next-server.js:753:15)
+    at new Server (/root/rainbow.org/node_modules/next/dist/server/next-server.js:80:25)
+    at module.exports (/root/rainbow.org/node_modules/next/dist/server/next.js:6:10)
+    at Object.<anonymous> (/root/rainbow.org/server.js:12:13)
+    at Module._compile (internal/modules/cjs/loader.js:721:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:732:10)
+    at Module.load (internal/modules/cjs/loader.js:620:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:560:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:552:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:774:12)
+npm ERR! code ELIFECYCLE
+npm ERR! errno 1
+npm ERR! website@1.0.0 start: `NODE_ENV=production node server.js`
+npm ERR! Exit status 1
+npm ERR! 
+npm ERR! Failed at the website@1.0.0 start script.
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     /root/.npm/_logs/2019-06-03T06_25_24_235Z-debug.log
+/root/rainbow.org/node_modules/next/dist/server/next-server.js:753
+        throw new Error("Could not find a valid build in the '".concat(this.distDir, "' directory! Try building your app with 'next build' before starting the server."));
+        ^
+
+Error: Could not find a valid build in the '/root/rainbow.org/.next' directory! Try building your app with 'next build' before starting the server.
+    at Server.readBuildId (/root/rainbow.org/node_modules/next/dist/server/next-server.js:753:15)
+    at new Server (/root/rainbow.org/node_modules/next/dist/server/next-server.js:80:25)
+    at module.exports (/root/rainbow.org/node_modules/next/dist/server/next.js:6:10)
+    at Object.<anonymous> (/root/rainbow.org/server.js:12:13)
+    at Module._compile (internal/modules/cjs/loader.js:721:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:732:10)
+    at Module.load (internal/modules/cjs/loader.js:620:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:560:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:552:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:774:12)
+npm ERR! code ELIFECYCLE
+npm ERR! errno 1
+npm ERR! website@1.0.0 start: `NODE_ENV=production node server.js`
+npm ERR! Exit status 1
+npm ERR! 
+npm ERR! Failed at the website@1.0.0 start script.
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     /root/.npm/_logs/2019-06-03T06_25_29_356Z-debug.log
+/root/rainbow.org/node_modules/next/dist/server/next-server.js:753
+        throw new Error("Could not find a valid build in the '".concat(this.distDir, "' directory! Try building your app with 'next build' before starting the server."));
+        ^
+
+Error: Could not find a valid build in the '/root/rainbow.org/.next' directory! Try building your app with 'next build' before starting the server.
+    at Server.readBuildId (/root/rainbow.org/node_modules/next/dist/server/next-server.js:753:15)
+    at new Server (/root/rainbow.org/node_modules/next/dist/server/next-server.js:80:25)
+    at module.exports (/root/rainbow.org/node_modules/next/dist/server/next.js:6:10)
+    at Object.<anonymous> (/root/rainbow.org/server.js:12:13)
+    at Module._compile (internal/modules/cjs/loader.js:721:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:732:10)
+    at Module.load (internal/modules/cjs/loader.js:620:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:560:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:552:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:774:12)
+npm ERR! code ELIFECYCLE
+npm ERR! errno 1
+npm ERR! website@1.0.0 start: `NODE_ENV=production node server.js`
+npm ERR! Exit status 1
+npm ERR! 
+npm ERR! Failed at the website@1.0.0 start script.
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     /root/.npm/_logs/2019-06-03T06_25_34_471Z-debug.log
+/root/rainbow.org/node_modules/next/dist/server/next-server.js:753
+        throw new Error("Could not find a valid build in the '".concat(this.distDir, "' directory! Try building your app with 'next build' before starting the server."));
+        ^
+
+Error: Could not find a valid build in the '/root/rainbow.org/.next' directory! Try building your app with 'next build' before starting the server.
+    at Server.readBuildId (/root/rainbow.org/node_modules/next/dist/server/next-server.js:753:15)
+    at new Server (/root/rainbow.org/node_modules/next/dist/server/next-server.js:80:25)
+    at module.exports (/root/rainbow.org/node_modules/next/dist/server/next.js:6:10)
+    at Object.<anonymous> (/root/rainbow.org/server.js:12:13)
+    at Module._compile (internal/modules/cjs/loader.js:721:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:732:10)
+    at Module.load (internal/modules/cjs/loader.js:620:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:560:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:552:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:774:12)
+npm ERR! code ELIFECYCLE
+npm ERR! errno 1
+npm ERR! website@1.0.0 start: `NODE_ENV=production node server.js`
+npm ERR! Exit status 1
+npm ERR! 
+npm ERR! Failed at the website@1.0.0 start script.
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     /root/.npm/_logs/2019-06-03T06_25_39_593Z-debug.log
+/root/rainbow.org/node_modules/next/dist/server/next-server.js:753
+        throw new Error("Could not find a valid build in the '".concat(this.distDir, "' directory! Try building your app with 'next build' before starting the server."));
+        ^
+
+Error: Could not find a valid build in the '/root/rainbow.org/.next' directory! Try building your app with 'next build' before starting the server.
+    at Server.readBuildId (/root/rainbow.org/node_modules/next/dist/server/next-server.js:753:15)
+    at new Server (/root/rainbow.org/node_modules/next/dist/server/next-server.js:80:25)
+    at module.exports (/root/rainbow.org/node_modules/next/dist/server/next.js:6:10)
+    at Object.<anonymous> (/root/rainbow.org/server.js:12:13)
+    at Module._compile (internal/modules/cjs/loader.js:721:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:732:10)
+    at Module.load (internal/modules/cjs/loader.js:620:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:560:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:552:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:774:12)
+npm ERR! code ELIFECYCLE
+npm ERR! errno 1
+npm ERR! website@1.0.0 start: `NODE_ENV=production node server.js`
+npm ERR! Exit status 1
+npm ERR! 
+npm ERR! Failed at the website@1.0.0 start script.
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     /root/.npm/_logs/2019-06-03T06_25_44_711Z-debug.log
+/root/rainbow.org/node_modules/next/dist/server/next-server.js:753
+        throw new Error("Could not find a valid build in the '".concat(this.distDir, "' directory! Try building your app with 'next build' before starting the server."));
+        ^
+
+Error: Could not find a valid build in the '/root/rainbow.org/.next' directory! Try building your app with 'next build' before starting the server.
+    at Server.readBuildId (/root/rainbow.org/node_modules/next/dist/server/next-server.js:753:15)
+    at new Server (/root/rainbow.org/node_modules/next/dist/server/next-server.js:80:25)
+    at module.exports (/root/rainbow.org/node_modules/next/dist/server/next.js:6:10)
+    at Object.<anonymous> (/root/rainbow.org/server.js:12:13)
+    at Module._compile (internal/modules/cjs/loader.js:721:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:732:10)
+    at Module.load (internal/modules/cjs/loader.js:620:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:560:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:552:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:774:12)
+npm ERR! code ELIFECYCLE
+npm ERR! errno 1
+npm ERR! website@1.0.0 start: `NODE_ENV=production node server.js`
+npm ERR! Exit status 1
+npm ERR! 
+npm ERR! Failed at the website@1.0.0 start script.
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     /root/.npm/_logs/2019-06-03T06_25_49_832Z-debug.log
+/root/rainbow.org/node_modules/next/dist/server/next-server.js:753
+        throw new Error("Could not find a valid build in the '".concat(this.distDir, "' directory! Try building your app with 'next build' before starting the server."));
+        ^
+
+Error: Could not find a valid build in the '/root/rainbow.org/.next' directory! Try building your app with 'next build' before starting the server.
+    at Server.readBuildId (/root/rainbow.org/node_modules/next/dist/server/next-server.js:753:15)
+    at new Server (/root/rainbow.org/node_modules/next/dist/server/next-server.js:80:25)
+    at module.exports (/root/rainbow.org/node_modules/next/dist/server/next.js:6:10)
+    at Object.<anonymous> (/root/rainbow.org/server.js:12:13)
+    at Module._compile (internal/modules/cjs/loader.js:721:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:732:10)
+    at Module.load (internal/modules/cjs/loader.js:620:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:560:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:552:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:774:12)
+npm ERR! code ELIFECYCLE
+npm ERR! errno 1
+npm ERR! website@1.0.0 start: `NODE_ENV=production node server.js`
+npm ERR! Exit status 1
+npm ERR! 
+npm ERR! Failed at the website@1.0.0 start script.
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     /root/.npm/_logs/2019-06-03T06_25_54_952Z-debug.log
+/root/rainbow.org/node_modules/next/dist/server/next-server.js:753
+        throw new Error("Could not find a valid build in the '".concat(this.distDir, "' directory! Try building your app with 'next build' before starting the server."));
+        ^
+
+Error: Could not find a valid build in the '/root/rainbow.org/.next' directory! Try building your app with 'next build' before starting the server.
+    at Server.readBuildId (/root/rainbow.org/node_modules/next/dist/server/next-server.js:753:15)
+    at new Server (/root/rainbow.org/node_modules/next/dist/server/next-server.js:80:25)
+    at module.exports (/root/rainbow.org/node_modules/next/dist/server/next.js:6:10)
+    at Object.<anonymous> (/root/rainbow.org/server.js:12:13)
+    at Module._compile (internal/modules/cjs/loader.js:721:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:732:10)
+    at Module.load (internal/modules/cjs/loader.js:620:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:560:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:552:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:774:12)
+npm ERR! code ELIFECYCLE
+npm ERR! errno 1
+npm ERR! website@1.0.0 start: `NODE_ENV=production node server.js`
+npm ERR! Exit status 1
+npm ERR! 
+npm ERR! Failed at the website@1.0.0 start script.
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     /root/.npm/_logs/2019-06-03T06_26_00_076Z-debug.log
+/root/rainbow.org/node_modules/next/dist/server/next-server.js:753
+        throw new Error("Could not find a valid build in the '".concat(this.distDir, "' directory! Try building your app with 'next build' before starting the server."));
+        ^
+
+Error: Could not find a valid build in the '/root/rainbow.org/.next' directory! Try building your app with 'next build' before starting the server.
+    at Server.readBuildId (/root/rainbow.org/node_modules/next/dist/server/next-server.js:753:15)
+    at new Server (/root/rainbow.org/node_modules/next/dist/server/next-server.js:80:25)
+    at module.exports (/root/rainbow.org/node_modules/next/dist/server/next.js:6:10)
+    at Object.<anonymous> (/root/rainbow.org/server.js:12:13)
+    at Module._compile (internal/modules/cjs/loader.js:721:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:732:10)
+    at Module.load (internal/modules/cjs/loader.js:620:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:560:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:552:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:774:12)
+npm ERR! code ELIFECYCLE
+npm ERR! errno 1
+npm ERR! website@1.0.0 start: `NODE_ENV=production node server.js`
+npm ERR! Exit status 1
+npm ERR! 
+npm ERR! Failed at the website@1.0.0 start script.
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     /root/.npm/_logs/2019-06-03T06_26_05_185Z-debug.log
+/root/rainbow.org/node_modules/next/dist/server/next-server.js:753
+        throw new Error("Could not find a valid build in the '".concat(this.distDir, "' directory! Try building your app with 'next build' before starting the server."));
+        ^
+
+Error: Could not find a valid build in the '/root/rainbow.org/.next' directory! Try building your app with 'next build' before starting the server.
+    at Server.readBuildId (/root/rainbow.org/node_modules/next/dist/server/next-server.js:753:15)
+    at new Server (/root/rainbow.org/node_modules/next/dist/server/next-server.js:80:25)
+    at module.exports (/root/rainbow.org/node_modules/next/dist/server/next.js:6:10)
+    at Object.<anonymous> (/root/rainbow.org/server.js:12:13)
+    at Module._compile (internal/modules/cjs/loader.js:721:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:732:10)
+    at Module.load (internal/modules/cjs/loader.js:620:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:560:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:552:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:774:12)
+npm ERR! code ELIFECYCLE
+npm ERR! errno 1
+npm ERR! website@1.0.0 start: `NODE_ENV=production node server.js`
+npm ERR! Exit status 1
+npm ERR! 
+npm ERR! Failed at the website@1.0.0 start script.
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     /root/.npm/_logs/2019-06-03T06_26_10_306Z-debug.log
+/root/rainbow.org/node_modules/next/dist/server/next-server.js:753
+        throw new Error("Could not find a valid build in the '".concat(this.distDir, "' directory! Try building your app with 'next build' before starting the server."));
+        ^
+
+Error: Could not find a valid build in the '/root/rainbow.org/.next' directory! Try building your app with 'next build' before starting the server.
+    at Server.readBuildId (/root/rainbow.org/node_modules/next/dist/server/next-server.js:753:15)
+    at new Server (/root/rainbow.org/node_modules/next/dist/server/next-server.js:80:25)
+    at module.exports (/root/rainbow.org/node_modules/next/dist/server/next.js:6:10)
+    at Object.<anonymous> (/root/rainbow.org/server.js:12:13)
+    at Module._compile (internal/modules/cjs/loader.js:721:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:732:10)
+    at Module.load (internal/modules/cjs/loader.js:620:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:560:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:552:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:774:12)
+npm ERR! code ELIFECYCLE
+npm ERR! errno 1
+npm ERR! website@1.0.0 start: `NODE_ENV=production node server.js`
+npm ERR! Exit status 1
+npm ERR! 
+npm ERR! Failed at the website@1.0.0 start script.
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     /root/.npm/_logs/2019-06-03T06_26_15_422Z-debug.log
+/root/rainbow.org/node_modules/next/dist/server/next-server.js:753
+        throw new Error("Could not find a valid build in the '".concat(this.distDir, "' directory! Try building your app with 'next build' before starting the server."));
+        ^
+
+Error: Could not find a valid build in the '/root/rainbow.org/.next' directory! Try building your app with 'next build' before starting the server.
+    at Server.readBuildId (/root/rainbow.org/node_modules/next/dist/server/next-server.js:753:15)
+    at new Server (/root/rainbow.org/node_modules/next/dist/server/next-server.js:80:25)
+    at module.exports (/root/rainbow.org/node_modules/next/dist/server/next.js:6:10)
+    at Object.<anonymous> (/root/rainbow.org/server.js:12:13)
+    at Module._compile (internal/modules/cjs/loader.js:721:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:732:10)
+    at Module.load (internal/modules/cjs/loader.js:620:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:560:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:552:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:774:12)
+npm ERR! code ELIFECYCLE
+npm ERR! errno 1
+npm ERR! website@1.0.0 start: `NODE_ENV=production node server.js`
+npm ERR! Exit status 1
+npm ERR! 
+npm ERR! Failed at the website@1.0.0 start script.
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     /root/.npm/_logs/2019-06-03T06_26_20_544Z-debug.log
+/root/rainbow.org/node_modules/next/dist/server/next-server.js:753
+        throw new Error("Could not find a valid build in the '".concat(this.distDir, "' directory! Try building your app with 'next build' before starting the server."));
+        ^
+
+Error: Could not find a valid build in the '/root/rainbow.org/.next' directory! Try building your app with 'next build' before starting the server.
+    at Server.readBuildId (/root/rainbow.org/node_modules/next/dist/server/next-server.js:753:15)
+    at new Server (/root/rainbow.org/node_modules/next/dist/server/next-server.js:80:25)
+    at module.exports (/root/rainbow.org/node_modules/next/dist/server/next.js:6:10)
+    at Object.<anonymous> (/root/rainbow.org/server.js:12:13)
+    at Module._compile (internal/modules/cjs/loader.js:721:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:732:10)
+    at Module.load (internal/modules/cjs/loader.js:620:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:560:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:552:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:774:12)
+npm ERR! code ELIFECYCLE
+npm ERR! errno 1
+npm ERR! website@1.0.0 start: `NODE_ENV=production node server.js`
+npm ERR! Exit status 1
+npm ERR! 
+npm ERR! Failed at the website@1.0.0 start script.
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     /root/.npm/_logs/2019-06-03T06_26_25_658Z-debug.log
+/root/rainbow.org/node_modules/next/dist/server/next-server.js:753
+        throw new Error("Could not find a valid build in the '".concat(this.distDir, "' directory! Try building your app with 'next build' before starting the server."));
+        ^
+
+Error: Could not find a valid build in the '/root/rainbow.org/.next' directory! Try building your app with 'next build' before starting the server.
+    at Server.readBuildId (/root/rainbow.org/node_modules/next/dist/server/next-server.js:753:15)
+    at new Server (/root/rainbow.org/node_modules/next/dist/server/next-server.js:80:25)
+    at module.exports (/root/rainbow.org/node_modules/next/dist/server/next.js:6:10)
+    at Object.<anonymous> (/root/rainbow.org/server.js:12:13)
+    at Module._compile (internal/modules/cjs/loader.js:721:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:732:10)
+    at Module.load (internal/modules/cjs/loader.js:620:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:560:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:552:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:774:12)
+npm ERR! code ELIFECYCLE
+npm ERR! errno 1
+npm ERR! website@1.0.0 start: `NODE_ENV=production node server.js`
+npm ERR! Exit status 1
+npm ERR! 
+npm ERR! Failed at the website@1.0.0 start script.
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     /root/.npm/_logs/2019-06-03T06_26_30_785Z-debug.log
+/root/rainbow.org/node_modules/next/dist/server/next-server.js:753
+        throw new Error("Could not find a valid build in the '".concat(this.distDir, "' directory! Try building your app with 'next build' before starting the server."));
+        ^
+
+Error: Could not find a valid build in the '/root/rainbow.org/.next' directory! Try building your app with 'next build' before starting the server.
+    at Server.readBuildId (/root/rainbow.org/node_modules/next/dist/server/next-server.js:753:15)
+    at new Server (/root/rainbow.org/node_modules/next/dist/server/next-server.js:80:25)
+    at module.exports (/root/rainbow.org/node_modules/next/dist/server/next.js:6:10)
+    at Object.<anonymous> (/root/rainbow.org/server.js:12:13)
+    at Module._compile (internal/modules/cjs/loader.js:721:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:732:10)
+    at Module.load (internal/modules/cjs/loader.js:620:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:560:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:552:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:774:12)
+npm ERR! code ELIFECYCLE
+npm ERR! errno 1
+npm ERR! website@1.0.0 start: `NODE_ENV=production node server.js`
+npm ERR! Exit status 1
+npm ERR! 
+npm ERR! Failed at the website@1.0.0 start script.
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     /root/.npm/_logs/2019-06-03T06_26_35_902Z-debug.log
+/root/rainbow.org/node_modules/next/dist/server/next-server.js:753
+        throw new Error("Could not find a valid build in the '".concat(this.distDir, "' directory! Try building your app with 'next build' before starting the server."));
+        ^
+
+Error: Could not find a valid build in the '/root/rainbow.org/.next' directory! Try building your app with 'next build' before starting the server.
+    at Server.readBuildId (/root/rainbow.org/node_modules/next/dist/server/next-server.js:753:15)
+    at new Server (/root/rainbow.org/node_modules/next/dist/server/next-server.js:80:25)
+    at module.exports (/root/rainbow.org/node_modules/next/dist/server/next.js:6:10)
+    at Object.<anonymous> (/root/rainbow.org/server.js:12:13)
+    at Module._compile (internal/modules/cjs/loader.js:721:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:732:10)
+    at Module.load (internal/modules/cjs/loader.js:620:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:560:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:552:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:774:12)
+npm ERR! code ELIFECYCLE
+npm ERR! errno 1
+npm ERR! website@1.0.0 start: `NODE_ENV=production node server.js`
+npm ERR! Exit status 1
+npm ERR! 
+npm ERR! Failed at the website@1.0.0 start script.
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     /root/.npm/_logs/2019-06-03T06_26_41_025Z-debug.log
+/root/rainbow.org/node_modules/next/dist/server/next-server.js:753
+        throw new Error("Could not find a valid build in the '".concat(this.distDir, "' directory! Try building your app with 'next build' before starting the server."));
+        ^
+
+Error: Could not find a valid build in the '/root/rainbow.org/.next' directory! Try building your app with 'next build' before starting the server.
+    at Server.readBuildId (/root/rainbow.org/node_modules/next/dist/server/next-server.js:753:15)
+    at new Server (/root/rainbow.org/node_modules/next/dist/server/next-server.js:80:25)
+    at module.exports (/root/rainbow.org/node_modules/next/dist/server/next.js:6:10)
+    at Object.<anonymous> (/root/rainbow.org/server.js:12:13)
+    at Module._compile (internal/modules/cjs/loader.js:721:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:732:10)
+    at Module.load (internal/modules/cjs/loader.js:620:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:560:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:552:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:774:12)
+npm ERR! code ELIFECYCLE
+npm ERR! errno 1
+npm ERR! website@1.0.0 start: `NODE_ENV=production node server.js`
+npm ERR! Exit status 1
+npm ERR! 
+npm ERR! Failed at the website@1.0.0 start script.
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     /root/.npm/_logs/2019-06-03T06_26_46_143Z-debug.log
+/root/rainbow.org/node_modules/next/dist/server/next-server.js:753
+        throw new Error("Could not find a valid build in the '".concat(this.distDir, "' directory! Try building your app with 'next build' before starting the server."));
+        ^
+
+Error: Could not find a valid build in the '/root/rainbow.org/.next' directory! Try building your app with 'next build' before starting the server.
+    at Server.readBuildId (/root/rainbow.org/node_modules/next/dist/server/next-server.js:753:15)
+    at new Server (/root/rainbow.org/node_modules/next/dist/server/next-server.js:80:25)
+    at module.exports (/root/rainbow.org/node_modules/next/dist/server/next.js:6:10)
+    at Object.<anonymous> (/root/rainbow.org/server.js:12:13)
+    at Module._compile (internal/modules/cjs/loader.js:721:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:732:10)
+    at Module.load (internal/modules/cjs/loader.js:620:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:560:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:552:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:774:12)
+npm ERR! code ELIFECYCLE
+npm ERR! errno 1
+npm ERR! website@1.0.0 start: `NODE_ENV=production node server.js`
+npm ERR! Exit status 1
+npm ERR! 
+npm ERR! Failed at the website@1.0.0 start script.
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     /root/.npm/_logs/2019-06-03T06_26_51_258Z-debug.log
+/root/rainbow.org/node_modules/next/dist/server/next-server.js:753
+        throw new Error("Could not find a valid build in the '".concat(this.distDir, "' directory! Try building your app with 'next build' before starting the server."));
+        ^
+
+Error: Could not find a valid build in the '/root/rainbow.org/.next' directory! Try building your app with 'next build' before starting the server.
+    at Server.readBuildId (/root/rainbow.org/node_modules/next/dist/server/next-server.js:753:15)
+    at new Server (/root/rainbow.org/node_modules/next/dist/server/next-server.js:80:25)
+    at module.exports (/root/rainbow.org/node_modules/next/dist/server/next.js:6:10)
+    at Object.<anonymous> (/root/rainbow.org/server.js:12:13)
+    at Module._compile (internal/modules/cjs/loader.js:721:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:732:10)
+    at Module.load (internal/modules/cjs/loader.js:620:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:560:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:552:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:774:12)
+npm ERR! code ELIFECYCLE
+npm ERR! errno 1
+npm ERR! website@1.0.0 start: `NODE_ENV=production node server.js`
+npm ERR! Exit status 1
+npm ERR! 
+npm ERR! Failed at the website@1.0.0 start script.
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     /root/.npm/_logs/2019-06-03T06_26_56_375Z-debug.log
+/root/rainbow.org/node_modules/next/dist/server/next-server.js:753
+        throw new Error("Could not find a valid build in the '".concat(this.distDir, "' directory! Try building your app with 'next build' before starting the server."));
+        ^
+
+Error: Could not find a valid build in the '/root/rainbow.org/.next' directory! Try building your app with 'next build' before starting the server.
+    at Server.readBuildId (/root/rainbow.org/node_modules/next/dist/server/next-server.js:753:15)
+    at new Server (/root/rainbow.org/node_modules/next/dist/server/next-server.js:80:25)
+    at module.exports (/root/rainbow.org/node_modules/next/dist/server/next.js:6:10)
+    at Object.<anonymous> (/root/rainbow.org/server.js:12:13)
+    at Module._compile (internal/modules/cjs/loader.js:721:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:732:10)
+    at Module.load (internal/modules/cjs/loader.js:620:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:560:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:552:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:774:12)
+npm ERR! code ELIFECYCLE
+npm ERR! errno 1
+npm ERR! website@1.0.0 start: `NODE_ENV=production node server.js`
+npm ERR! Exit status 1
+npm ERR! 
+npm ERR! Failed at the website@1.0.0 start script.
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     /root/.npm/_logs/2019-06-03T06_27_01_524Z-debug.log
+/root/rainbow.org/node_modules/next/dist/server/next-server.js:753
+        throw new Error("Could not find a valid build in the '".concat(this.distDir, "' directory! Try building your app with 'next build' before starting the server."));
+        ^
+
+Error: Could not find a valid build in the '/root/rainbow.org/.next' directory! Try building your app with 'next build' before starting the server.
+    at Server.readBuildId (/root/rainbow.org/node_modules/next/dist/server/next-server.js:753:15)
+    at new Server (/root/rainbow.org/node_modules/next/dist/server/next-server.js:80:25)
+    at module.exports (/root/rainbow.org/node_modules/next/dist/server/next.js:6:10)
+    at Object.<anonymous> (/root/rainbow.org/server.js:12:13)
+    at Module._compile (internal/modules/cjs/loader.js:721:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:732:10)
+    at Module.load (internal/modules/cjs/loader.js:620:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:560:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:552:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:774:12)
+npm ERR! code ELIFECYCLE
+npm ERR! errno 1
+npm ERR! website@1.0.0 start: `NODE_ENV=production node server.js`
+npm ERR! Exit status 1
+npm ERR! 
+npm ERR! Failed at the website@1.0.0 start script.
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     /root/.npm/_logs/2019-06-03T06_27_06_637Z-debug.log
+/root/rainbow.org/node_modules/next/dist/server/next-server.js:753
+        throw new Error("Could not find a valid build in the '".concat(this.distDir, "' directory! Try building your app with 'next build' before starting the server."));
+        ^
+
+Error: Could not find a valid build in the '/root/rainbow.org/.next' directory! Try building your app with 'next build' before starting the server.
+    at Server.readBuildId (/root/rainbow.org/node_modules/next/dist/server/next-server.js:753:15)
+    at new Server (/root/rainbow.org/node_modules/next/dist/server/next-server.js:80:25)
+    at module.exports (/root/rainbow.org/node_modules/next/dist/server/next.js:6:10)
+    at Object.<anonymous> (/root/rainbow.org/server.js:12:13)
+    at Module._compile (internal/modules/cjs/loader.js:721:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:732:10)
+    at Module.load (internal/modules/cjs/loader.js:620:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:560:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:552:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:774:12)
+npm ERR! code ELIFECYCLE
+npm ERR! errno 1
+npm ERR! website@1.0.0 start: `NODE_ENV=production node server.js`
+npm ERR! Exit status 1
+npm ERR! 
+npm ERR! Failed at the website@1.0.0 start script.
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     /root/.npm/_logs/2019-06-03T06_27_11_766Z-debug.log
+/root/rainbow.org/node_modules/next/dist/server/next-server.js:753
+        throw new Error("Could not find a valid build in the '".concat(this.distDir, "' directory! Try building your app with 'next build' before starting the server."));
+        ^
+
+Error: Could not find a valid build in the '/root/rainbow.org/.next' directory! Try building your app with 'next build' before starting the server.
+    at Server.readBuildId (/root/rainbow.org/node_modules/next/dist/server/next-server.js:753:15)
+    at new Server (/root/rainbow.org/node_modules/next/dist/server/next-server.js:80:25)
+    at module.exports (/root/rainbow.org/node_modules/next/dist/server/next.js:6:10)
+    at Object.<anonymous> (/root/rainbow.org/server.js:12:13)
+    at Module._compile (internal/modules/cjs/loader.js:721:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:732:10)
+    at Module.load (internal/modules/cjs/loader.js:620:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:560:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:552:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:774:12)
+npm ERR! code ELIFECYCLE
+npm ERR! errno 1
+npm ERR! website@1.0.0 start: `NODE_ENV=production node server.js`
+npm ERR! Exit status 1
+npm ERR! 
+npm ERR! Failed at the website@1.0.0 start script.
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     /root/.npm/_logs/2019-06-03T06_27_16_872Z-debug.log
+/root/rainbow.org/node_modules/next/dist/server/next-server.js:753
+        throw new Error("Could not find a valid build in the '".concat(this.distDir, "' directory! Try building your app with 'next build' before starting the server."));
+        ^
+
+Error: Could not find a valid build in the '/root/rainbow.org/.next' directory! Try building your app with 'next build' before starting the server.
+    at Server.readBuildId (/root/rainbow.org/node_modules/next/dist/server/next-server.js:753:15)
+    at new Server (/root/rainbow.org/node_modules/next/dist/server/next-server.js:80:25)
+    at module.exports (/root/rainbow.org/node_modules/next/dist/server/next.js:6:10)
+    at Object.<anonymous> (/root/rainbow.org/server.js:12:13)
+    at Module._compile (internal/modules/cjs/loader.js:721:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:732:10)
+    at Module.load (internal/modules/cjs/loader.js:620:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:560:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:552:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:774:12)
+npm ERR! code ELIFECYCLE
+npm ERR! errno 1
+npm ERR! website@1.0.0 start: `NODE_ENV=production node server.js`
+npm ERR! Exit status 1
+npm ERR! 
+npm ERR! Failed at the website@1.0.0 start script.
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     /root/.npm/_logs/2019-06-03T06_27_21_997Z-debug.log
+/root/rainbow.org/node_modules/next/dist/server/next-server.js:753
+        throw new Error("Could not find a valid build in the '".concat(this.distDir, "' directory! Try building your app with 'next build' before starting the server."));
+        ^
+
+Error: Could not find a valid build in the '/root/rainbow.org/.next' directory! Try building your app with 'next build' before starting the server.
+    at Server.readBuildId (/root/rainbow.org/node_modules/next/dist/server/next-server.js:753:15)
+    at new Server (/root/rainbow.org/node_modules/next/dist/server/next-server.js:80:25)
+    at module.exports (/root/rainbow.org/node_modules/next/dist/server/next.js:6:10)
+    at Object.<anonymous> (/root/rainbow.org/server.js:12:13)
+    at Module._compile (internal/modules/cjs/loader.js:721:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:732:10)
+    at Module.load (internal/modules/cjs/loader.js:620:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:560:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:552:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:774:12)
+npm ERR! code ELIFECYCLE
+npm ERR! errno 1
+npm ERR! website@1.0.0 start: `NODE_ENV=production node server.js`
+npm ERR! Exit status 1
+npm ERR! 
+npm ERR! Failed at the website@1.0.0 start script.
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     /root/.npm/_logs/2019-06-03T06_27_27_119Z-debug.log
+/root/rainbow.org/node_modules/next/dist/server/next-server.js:753
+        throw new Error("Could not find a valid build in the '".concat(this.distDir, "' directory! Try building your app with 'next build' before starting the server."));
+        ^
+
+Error: Could not find a valid build in the '/root/rainbow.org/.next' directory! Try building your app with 'next build' before starting the server.
+    at Server.readBuildId (/root/rainbow.org/node_modules/next/dist/server/next-server.js:753:15)
+    at new Server (/root/rainbow.org/node_modules/next/dist/server/next-server.js:80:25)
+    at module.exports (/root/rainbow.org/node_modules/next/dist/server/next.js:6:10)
+    at Object.<anonymous> (/root/rainbow.org/server.js:12:13)
+    at Module._compile (internal/modules/cjs/loader.js:721:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:732:10)
+    at Module.load (internal/modules/cjs/loader.js:620:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:560:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:552:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:774:12)
+npm ERR! code ELIFECYCLE
+npm ERR! errno 1
+npm ERR! website@1.0.0 start: `NODE_ENV=production node server.js`
+npm ERR! Exit status 1
+npm ERR! 
+npm ERR! Failed at the website@1.0.0 start script.
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     /root/.npm/_logs/2019-06-03T06_27_32_237Z-debug.log
+/root/rainbow.org/node_modules/next/dist/server/next-server.js:753
+        throw new Error("Could not find a valid build in the '".concat(this.distDir, "' directory! Try building your app with 'next build' before starting the server."));
+        ^
+
+Error: Could not find a valid build in the '/root/rainbow.org/.next' directory! Try building your app with 'next build' before starting the server.
+    at Server.readBuildId (/root/rainbow.org/node_modules/next/dist/server/next-server.js:753:15)
+    at new Server (/root/rainbow.org/node_modules/next/dist/server/next-server.js:80:25)
+    at module.exports (/root/rainbow.org/node_modules/next/dist/server/next.js:6:10)
+    at Object.<anonymous> (/root/rainbow.org/server.js:12:13)
+    at Module._compile (internal/modules/cjs/loader.js:721:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:732:10)
+    at Module.load (internal/modules/cjs/loader.js:620:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:560:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:552:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:774:12)
+npm ERR! code ELIFECYCLE
+npm ERR! errno 1
+npm ERR! website@1.0.0 start: `NODE_ENV=production node server.js`
+npm ERR! Exit status 1
+npm ERR! 
+npm ERR! Failed at the website@1.0.0 start script.
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     /root/.npm/_logs/2019-06-03T06_27_37_352Z-debug.log
+/root/rainbow.org/node_modules/next/dist/server/next-server.js:753
+        throw new Error("Could not find a valid build in the '".concat(this.distDir, "' directory! Try building your app with 'next build' before starting the server."));
+        ^
+
+Error: Could not find a valid build in the '/root/rainbow.org/.next' directory! Try building your app with 'next build' before starting the server.
+    at Server.readBuildId (/root/rainbow.org/node_modules/next/dist/server/next-server.js:753:15)
+    at new Server (/root/rainbow.org/node_modules/next/dist/server/next-server.js:80:25)
+    at module.exports (/root/rainbow.org/node_modules/next/dist/server/next.js:6:10)
+    at Object.<anonymous> (/root/rainbow.org/server.js:12:13)
+    at Module._compile (internal/modules/cjs/loader.js:721:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:732:10)
+    at Module.load (internal/modules/cjs/loader.js:620:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:560:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:552:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:774:12)
+npm ERR! code ELIFECYCLE
+npm ERR! errno 1
+npm ERR! website@1.0.0 start: `NODE_ENV=production node server.js`
+npm ERR! Exit status 1
+npm ERR! 
+npm ERR! Failed at the website@1.0.0 start script.
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     /root/.npm/_logs/2019-06-03T06_27_42_472Z-debug.log
+/root/rainbow.org/node_modules/next/dist/server/next-server.js:753
+        throw new Error("Could not find a valid build in the '".concat(this.distDir, "' directory! Try building your app with 'next build' before starting the server."));
+        ^
+
+Error: Could not find a valid build in the '/root/rainbow.org/.next' directory! Try building your app with 'next build' before starting the server.
+    at Server.readBuildId (/root/rainbow.org/node_modules/next/dist/server/next-server.js:753:15)
+    at new Server (/root/rainbow.org/node_modules/next/dist/server/next-server.js:80:25)
+    at module.exports (/root/rainbow.org/node_modules/next/dist/server/next.js:6:10)
+    at Object.<anonymous> (/root/rainbow.org/server.js:12:13)
+    at Module._compile (internal/modules/cjs/loader.js:721:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:732:10)
+    at Module.load (internal/modules/cjs/loader.js:620:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:560:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:552:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:774:12)
+npm ERR! code ELIFECYCLE
+npm ERR! errno 1
+npm ERR! website@1.0.0 start: `NODE_ENV=production node server.js`
+npm ERR! Exit status 1
+npm ERR! 
+npm ERR! Failed at the website@1.0.0 start script.
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     /root/.npm/_logs/2019-06-03T06_27_47_591Z-debug.log
+/root/rainbow.org/node_modules/next/dist/server/next-server.js:753
+        throw new Error("Could not find a valid build in the '".concat(this.distDir, "' directory! Try building your app with 'next build' before starting the server."));
+        ^
+
+Error: Could not find a valid build in the '/root/rainbow.org/.next' directory! Try building your app with 'next build' before starting the server.
+    at Server.readBuildId (/root/rainbow.org/node_modules/next/dist/server/next-server.js:753:15)
+    at new Server (/root/rainbow.org/node_modules/next/dist/server/next-server.js:80:25)
+    at module.exports (/root/rainbow.org/node_modules/next/dist/server/next.js:6:10)
+    at Object.<anonymous> (/root/rainbow.org/server.js:12:13)
+    at Module._compile (internal/modules/cjs/loader.js:721:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:732:10)
+    at Module.load (internal/modules/cjs/loader.js:620:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:560:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:552:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:774:12)
+npm ERR! code ELIFECYCLE
+npm ERR! errno 1
+npm ERR! website@1.0.0 start: `NODE_ENV=production node server.js`
+npm ERR! Exit status 1
+npm ERR! 
+npm ERR! Failed at the website@1.0.0 start script.
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     /root/.npm/_logs/2019-06-03T06_27_52_707Z-debug.log
+/root/rainbow.org/node_modules/next/dist/server/next-server.js:753
+        throw new Error("Could not find a valid build in the '".concat(this.distDir, "' directory! Try building your app with 'next build' before starting the server."));
+        ^
+
+Error: Could not find a valid build in the '/root/rainbow.org/.next' directory! Try building your app with 'next build' before starting the server.
+    at Server.readBuildId (/root/rainbow.org/node_modules/next/dist/server/next-server.js:753:15)
+    at new Server (/root/rainbow.org/node_modules/next/dist/server/next-server.js:80:25)
+    at module.exports (/root/rainbow.org/node_modules/next/dist/server/next.js:6:10)
+    at Object.<anonymous> (/root/rainbow.org/server.js:12:13)
+    at Module._compile (internal/modules/cjs/loader.js:721:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:732:10)
+    at Module.load (internal/modules/cjs/loader.js:620:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:560:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:552:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:774:12)
+npm ERR! code ELIFECYCLE
+npm ERR! errno 1
+npm ERR! website@1.0.0 start: `NODE_ENV=production node server.js`
+npm ERR! Exit status 1
+npm ERR! 
+npm ERR! Failed at the website@1.0.0 start script.
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     /root/.npm/_logs/2019-06-03T06_27_57_828Z-debug.log
+/root/rainbow.org/node_modules/next/dist/server/next-server.js:753
+        throw new Error("Could not find a valid build in the '".concat(this.distDir, "' directory! Try building your app with 'next build' before starting the server."));
+        ^
+
+Error: Could not find a valid build in the '/root/rainbow.org/.next' directory! Try building your app with 'next build' before starting the server.
+    at Server.readBuildId (/root/rainbow.org/node_modules/next/dist/server/next-server.js:753:15)
+    at new Server (/root/rainbow.org/node_modules/next/dist/server/next-server.js:80:25)
+    at module.exports (/root/rainbow.org/node_modules/next/dist/server/next.js:6:10)
+    at Object.<anonymous> (/root/rainbow.org/server.js:12:13)
+    at Module._compile (internal/modules/cjs/loader.js:721:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:732:10)
+    at Module.load (internal/modules/cjs/loader.js:620:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:560:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:552:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:774:12)
+npm ERR! code ELIFECYCLE
+npm ERR! errno 1
+npm ERR! website@1.0.0 start: `NODE_ENV=production node server.js`
+npm ERR! Exit status 1
+npm ERR! 
+npm ERR! Failed at the website@1.0.0 start script.
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     /root/.npm/_logs/2019-06-03T06_28_02_949Z-debug.log
+/root/rainbow.org/node_modules/next/dist/server/next-server.js:753
+        throw new Error("Could not find a valid build in the '".concat(this.distDir, "' directory! Try building your app with 'next build' before starting the server."));
+        ^
+
+Error: Could not find a valid build in the '/root/rainbow.org/.next' directory! Try building your app with 'next build' before starting the server.
+    at Server.readBuildId (/root/rainbow.org/node_modules/next/dist/server/next-server.js:753:15)
+    at new Server (/root/rainbow.org/node_modules/next/dist/server/next-server.js:80:25)
+    at module.exports (/root/rainbow.org/node_modules/next/dist/server/next.js:6:10)
+    at Object.<anonymous> (/root/rainbow.org/server.js:12:13)
+    at Module._compile (internal/modules/cjs/loader.js:721:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:732:10)
+    at Module.load (internal/modules/cjs/loader.js:620:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:560:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:552:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:774:12)
+npm ERR! code ELIFECYCLE
+npm ERR! errno 1
+npm ERR! website@1.0.0 start: `NODE_ENV=production node server.js`
+npm ERR! Exit status 1
+npm ERR! 
+npm ERR! Failed at the website@1.0.0 start script.
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     /root/.npm/_logs/2019-06-03T06_28_08_070Z-debug.log
+/root/rainbow.org/node_modules/next/dist/server/next-server.js:753
+        throw new Error("Could not find a valid build in the '".concat(this.distDir, "' directory! Try building your app with 'next build' before starting the server."));
+        ^
+
+Error: Could not find a valid build in the '/root/rainbow.org/.next' directory! Try building your app with 'next build' before starting the server.
+    at Server.readBuildId (/root/rainbow.org/node_modules/next/dist/server/next-server.js:753:15)
+    at new Server (/root/rainbow.org/node_modules/next/dist/server/next-server.js:80:25)
+    at module.exports (/root/rainbow.org/node_modules/next/dist/server/next.js:6:10)
+    at Object.<anonymous> (/root/rainbow.org/server.js:12:13)
+    at Module._compile (internal/modules/cjs/loader.js:721:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:732:10)
+    at Module.load (internal/modules/cjs/loader.js:620:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:560:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:552:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:774:12)
+npm ERR! code ELIFECYCLE
+npm ERR! errno 1
+npm ERR! website@1.0.0 start: `NODE_ENV=production node server.js`
+npm ERR! Exit status 1
+npm ERR! 
+npm ERR! Failed at the website@1.0.0 start script.
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
