@@ -1,7 +1,7 @@
 {
   "name": "website",
   "version": "1.0.0",
-  "description": "dvc.org – website source code",
+  "description": "lhtech.info – website source code",
   "main": "index.js",
   "scripts": {
     "dev": "node server.js",
@@ -13,12 +13,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/iterative/dvc.org.git"
+    "url": ""
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/iterative/dvc.org/issues"
+    "url": ""
   },
   "homepage": "https://github.com/iterative/dvc.org#readme",
   "dependencies": {
