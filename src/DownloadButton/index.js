@@ -8,7 +8,6 @@ const VERSION = `0.41.0`
 const IOS = `ios`
 const Android = `android`
 const LINUX = `linux`
-const LINUX_RPM = `linux_rpm`
 const UNKNOWN = `...`
 const LINE = `line`
 
@@ -23,10 +22,6 @@ const links = {
   },
   [LINUX]: {
     title: 'Linux Deb',
-    url: ``
-  },
-  [LINUX_RPM]: {
-    title: 'Linux RPM',
     url: ``
   },
   [UNKNOWN]: {
@@ -73,7 +68,7 @@ export default class DownloadButton extends Component {
 
   getSystemOS = () => {
     let OSName = UNKNOWN
-    if (!isClient) return OSName
+    //if (!isClient) return OSName
     var ua = navigator.userAgent.toLowerCase();
     if (ua.match(/android/i) === "android")
     {
@@ -109,7 +104,7 @@ export default class DownloadButton extends Component {
 
   renderLinks = () => (
     <Links>
-      {[IOS, Android, LINUX, LINUX_RPM, LINE, UNKNOWN].map(id => {
+      {[IOS, Android, LINUX, LINE, UNKNOWN].map(id => {
         const link = links[id]
 
         if (link.line) {
