@@ -74,10 +74,18 @@ export default class DownloadButton extends Component {
   getSystemOS = () => {
     let OSName = UNKNOWN
     if (!isClient) return OSName
-
-    if (navigator.userAgent.indexOf('Android') !== -1  || navigator.userAgent.indexOf('Adr') !== -1) OSName = Android
-    if (!!navigator.userAgent.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/)) OSName = IOS
-    if (navigator.userAgent.indexOf('Linux') !== -1) OSName = LINUX
+    var ua = navigator.userAgent.toLowerCase();
+    if (ua.match(/android/i) === "android")
+    {
+      OSName = Android
+    }
+    if (ua.match(/iPhone/i)  === "iPhone")
+    {
+      OSName = IOS
+    }
+    // if (navigator.userAgent.indexOf('Android') !== -1  || navigator.userAgent.indexOf('Adr') !== -1) OSName = Android
+    // if (!!navigator.userAgent.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/)) OSName = IOS
+    // if (navigator.userAgent.indexOf('Linux') !== -1) OSName = LINUX
 
     return OSName
   }
@@ -114,7 +122,7 @@ export default class DownloadButton extends Component {
               readOnly
               key={id}
               value={link.title}
-              onClick={function(e) {
+              onClick={function (e) {
                 e.target.select()
                 e.stopPropagation()
               }}
