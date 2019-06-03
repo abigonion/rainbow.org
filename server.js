@@ -12,60 +12,54 @@ const port = process.env.PORT || 3000
 const app = next({ dev })
 const handle = app.getRequestHandler()
 
-// app.prepare().then(() => {
-//   createServer((req, res) => {
-//     const parsedUrl = parse(req.url, true)
-//     const { pathname, query } = parsedUrl
-//     const doc = /^\/doc.*/i
-//     const s3 = /^\/s3\/.*/i
-//     const pkg = /^\/(deb|rpm)\/.*/i
-//     const chat = /^\/(help|chat)\/?$/i
-//     //根据不同的域名host访问不同的doc目录
-//     if (req.headers.host === 'man.dvc.org') {
-//       const doc_pathname = "/doc/commands-reference" + pathname
-//       res.writeHead(301, { 'Location': "http://lhtech.info" + doc_pathname })
-//       res.end()
-//     } else if (req.headers.host === 'pycon2019.dvc.org') {
-//       res.writeHead(301, { 'Location': "https://dvc.org/doc/get-started" })
-//       res.end()
-//     } else if (req.headers.host === 'remote.dvc.org') {
-//       res.writeHead(301, { 'Location': "https://s3-us-west-2.amazonaws.com/dvc-storage" + pathname})
-//       res.end()
-//     } else if (doc.test(pathname)) {
-//       let normalized_pathname = pathname.replace(/^\/doc[^?\/]*/i, '/doc')
-//       if (normalized_pathname !== pathname) {
-//         res.writeHead(301, { 'Location': normalized_pathname +
-//           (Object.keys(query).length === 0 ? '' : '?') +
-//           querystring.stringify(query)})
-//         res.end()
-//       } else {
-//         app.render(req, res, '/doc', query)
-//       }
-//     } else if (s3.test(pathname)) {
-//       res.writeHead(301, {'Location':
-//         "https://s3-us-west-2.amazonaws.com/dvc-share/" +
-//         pathname.substring(4)})
-//       res.end()
-//     } else if (pkg.test(pathname)) {
-//       res.writeHead(301, {'Location':
-//         "https://s3-us-east-2.amazonaws.com/dvc-s3-repo/" + pathname.substring(1, 4) + '/' +
-//         pathname.substring(5)})
-//       res.end()
-//     } else if (chat.test(pathname)) {
-//       res.writeHead(301, {'Location': "https://discordapp.com/invite/dvwXA2N"})
-//       res.end()
-//     } else {
-//       handle(req, res, parsedUrl)
-//     }
+app.prepare().then(() => {
+  createServer((req, res) => {
+    const parsedUrl = parse(req.url, true)
+    const { pathname, query } = parsedUrl
+    const doc = /^\/doc.*/i
+    const s3 = /^\/s3\/.*/i
+    const pkg = /^\/(deb|rpm)\/.*/i
+    const chat = /^\/(help|chat)\/?$/i
+    //根据不同的域名host访问不同的doc目录
+    if (req.headers.host === 'man.dvc.org') {
+      const doc_pathname = "/doc/commands-reference" + pathname
+      res.writeHead(301, { 'Location': "http://lhtech.info" + doc_pathname })
+      res.end()
+    } else if (req.headers.host === 'pycon2019.dvc.org') {
+      res.writeHead(301, { 'Location': "https://dvc.org/doc/get-started" })
+      res.end()
+    } else if (req.headers.host === 'remote.dvc.org') {
+      res.writeHead(301, { 'Location': "https://s3-us-west-2.amazonaws.com/dvc-storage" + pathname})
+      res.end()
+    } else if (doc.test(pathname)) {
+      let normalized_pathname = pathname.replace(/^\/doc[^?\/]*/i, '/doc')
+      if (normalized_pathname !== pathname) {
+        res.writeHead(301, { 'Location': normalized_pathname +
+          (Object.keys(query).length === 0 ? '' : '?') +
+          querystring.stringify(query)})
+        res.end()
+      } else {
+        app.render(req, res, '/doc', query)
+      }
+    } else if (s3.test(pathname)) {
+      res.writeHead(301, {'Location':
+        "https://s3-us-west-2.amazonaws.com/dvc-share/" +
+        pathname.substring(4)})
+      res.end()
+    } else if (pkg.test(pathname)) {
+      res.writeHead(301, {'Location':
+        "https://s3-us-east-2.amazonaws.com/dvc-s3-repo/" + pathname.substring(1, 4) + '/' +
+        pathname.substring(5)})
+      res.end()
+    } else if (chat.test(pathname)) {
+      res.writeHead(301, {'Location': "https://discordapp.com/invite/dvwXA2N"})
+      res.end()
+    } else {
+      handle(req, res, parsedUrl)
+    }
 
-//   }).listen(port, err => {
-//     if (err) throw err
-//     console.log('> Ready on http://localhost:3000')
-//   })
-// })
-app.listen(port, err => {
-      if (err) throw err
-      console.log('> Ready on http://localhost:3000')
-    })
-
-    
+  }).listen(port, err => {
+    if (err) throw err
+    console.log('> Ready on http://localhost:3000')
+  })
+})
