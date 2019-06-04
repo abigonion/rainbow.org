@@ -14,7 +14,8 @@ import Subscribe from '../src/Subscribe'
 
 import intl from 'react-intl-universal';
 import axios from 'axios';
-
+import zh from '../static/locales/zh-CN.json';
+import en from '../static/locales/en-US.json';
 const HeadInjector = () => (
     <Head>
         <link
@@ -36,8 +37,8 @@ export class App extends Component {
 
     componentDidMount(){
         intl.load({
-            "en-US" : require('../static/locales/en-US.json'),
-            "zh-CN" : require("../static/locales/zh-CN.json")
+            "en-US" :en,
+            "zh-CN" : zh
         })
             this.loadLocales()
     }
