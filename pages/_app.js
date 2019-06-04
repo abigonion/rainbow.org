@@ -10,7 +10,7 @@ export default class MyApp extends App {
     state = {initDone: false}
 
     componentDidMount(){
-        this.loadLocales()
+            this.loadLocales()
     }
     loadLocales() {
         let currentLocale = intl.determineLocale({
@@ -29,22 +29,4 @@ export default class MyApp extends App {
             this.setState({ initDone: true });
           });
       }
-    
-    static async getInitialProps({ Component, router, ctx }) {
-        
-        let pageProps = {}
-
-        if (Component.getInitialProps) {
-            pageProps = await Component.getInitialProps(ctx)
-        }
-        return { pageProps}
-    }
-
-
-    render() {
-        const { Component, pageProps } = this.props
-        return <Container>
-            <Component {...pageProps} />
-        </Container>
-    }
 }
