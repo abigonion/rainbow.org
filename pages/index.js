@@ -35,6 +35,10 @@ export class App extends Component {
     state = {initDone: false}
 
     componentDidMount(){
+        intl.load({
+            "en-US" : require('../static/locales/en-US.json'),
+            "zh-CN" : require("../static/locales/zh-CN.json")
+        })
             this.loadLocales()
     }
     loadLocales() {
@@ -42,9 +46,7 @@ export class App extends Component {
             urlLocaleKey: 'lang',
             cookieLocaleKey: 'lang'
           });
-
           // 如果没找到，则默认为汉语
-
         axios
             .get(`../static/locales/${currentLocale}.json`)
             .then(res =>{
