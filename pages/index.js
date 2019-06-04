@@ -11,7 +11,10 @@ import Diagram from '../src/Diagram'
 import PromoSection from '../src/PromoSection'
 import UseCases from '../src/UseCases'
 import Subscribe from '../src/Subscribe'
-import intl from 'react-intl-universal'
+
+import intl from 'react-intl-universal';
+import axios from 'axios';
+
 const HeadInjector = () => (
     <Head>
         <link
@@ -29,9 +32,36 @@ const HeadInjector = () => (
     </Head>
 )
 export class App extends Component {
+    state = {initDone: false}
 
+    componentDidMount(){
+            this.loadLocales()
+    }
+    loadLocales() {
+        let currentLocale = intl.determineLocale({
+            urlLocaleKey: 'lang',
+            cookieLocaleKey: 'lang'
+          });
+
+          // 如果没找到，则默认为汉语
+
+        axios
+            .get(`../static/locales/${currentLocale}.json`)
+            .then(res =>{
+                return  intl.init({
+                    currentLocale, // TODO: determine locale here
+                    locales: {
+                      [currentLocale]: res.data
+                    }
+                  })
+            }).then(() => {
+            // After loading CLDR locale data, start to render
+            this.setState({ initDone: true });
+          });
+      }
     render() {
         return (
+            this.state.initDone && (
             <Page stickHeader={true}>
                 <HeadInjector />
                 <Hero>
@@ -47,10 +77,11 @@ export class App extends Component {
                 <Subscribe />
             </Page>
         )
+        )
     }
 }
-
 export default App;
+
 const LearnMoreSection = styled.div`
   z-index: 2;
   position: absolute;
