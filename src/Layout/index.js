@@ -10,13 +10,13 @@ import { initGA, logPageView } from '../utils/ga'
 
 
 class Layout extends Component {
-  componentDidMount() {
-    if (!window.GA_INITIALIZED) {
-      initGA()
-      window.GA_INITIALIZED = true
-    }
-    logPageView()
-  }
+  // componentDidMount() {
+  //   if (!window.GA_INITIALIZED) {
+  //     initGA()
+  //     window.GA_INITIALIZED = true
+  //   }
+  //   logPageView()
+  // }
 
   componentWillReceiveProps(nextProps) {
     const { router } = nextProps
