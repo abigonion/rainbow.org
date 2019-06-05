@@ -13,7 +13,12 @@ import UseCases from '../src/UseCases'
 import Subscribe from '../src/Subscribe'
 
 import intl from 'react-intl-universal';
-import axios from 'axios';
+require('intl/locale-data/jsonp/en.js');
+require('intl/locale-data/jsonp/zh.js');
+const locales = {
+    "en-US": require('../static/locales/en-US.json'),
+    "zh-CN": require('../static/locales/zh-CN.json'),
+  };
 const HeadInjector = () => (
     <Head>
         <link
@@ -43,19 +48,15 @@ export class App extends Component {
           });
           console.log('我正在被执行')
           // 如果没找到，则默认为汉语
-        axios
-            .get(`../static/locales/${currentLocale}.json`)
-            .then(res =>{
-                return  intl.init({
-                    currentLocale, // TODO: determine locale here
-                    locales: {
-                      [currentLocale]: res.data
-                    }
-                  })
-            }).then(() => {
+          intl.init({
+            currentLocale: currentLocale, // TODO: determine locale here
+            locales,
+          })
+          .then(() => {
             // After loading CLDR locale data, start to render
-            this.setState({ initDone: true });
-          });
+            this.setState({initDone: true});
+
+});
       }
     render() {
         return (
