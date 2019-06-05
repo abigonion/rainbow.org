@@ -15,7 +15,7 @@ import Subscribe from '../src/Subscribe'
 import intl from 'react-intl-universal';
 import IntlPolyfill from "intl";
 global.Intl = IntlPolyfill;
-
+import axios from 'axios'
 require('intl/locale-data/jsonp/en.js');
 require('intl/locale-data/jsonp/zh.js');
 const locales = {
@@ -51,16 +51,22 @@ export class App extends Component {
           });
           console.log('我正在被执行')
           // 如果没找到，则默认为汉语
-          intl.init({
-            currentLocale: currentLocale, // TODO: determine locale here
-            locales,
-          })
-          .then(() => {
-            // After loading CLDR locale data, start to render
-            this.setState({initDone: true});
-
-});
-      }
+          axios
+          //.get(`../static/locales/${currentLocale}.json`)
+          .get(`https://raw.githubusercontent.com/abigonion/rainbow.org/master/static/locales/${currentLocale}.json`)
+          .then(res =>{
+              return  intl.init({
+                  currentLocale, // TODO: determine locale here
+                  locales: {
+                    [currentLocale]: res.data
+                  }
+                })
+          }).then(() => {
+          // After loading CLDR locale data, start to render
+          this.setState({ initDone: true });
+        })
+    }
+      
     render() {
         return (
             this.state.initDone && (
