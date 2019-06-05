@@ -14,8 +14,6 @@ import Subscribe from '../src/Subscribe'
 
 import intl from 'react-intl-universal';
 import axios from 'axios';
-import zh from '../static/locales/zh-CN.json';
-import en from '../static/locales/en-US.json';
 const HeadInjector = () => (
     <Head>
         <link
@@ -36,10 +34,6 @@ export class App extends Component {
     state = {initDone: false}
 
     componentDidMount(){
-        intl.load({
-            "en-US" :en,
-            "zh-CN" : zh
-        })
             this.loadLocales()
     }
     loadLocales() {
@@ -47,6 +41,7 @@ export class App extends Component {
             urlLocaleKey: 'lang',
             cookieLocaleKey: 'lang'
           });
+          console.log('我正在被执行')
           // 如果没找到，则默认为汉语
         axios
             .get(`../static/locales/${currentLocale}.json`)
