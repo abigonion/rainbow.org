@@ -13,11 +13,7 @@ import TrySection from '../src/TrySection'
 
 import FreaturesFont from '../src/FreaturesFont';
 import intl from 'react-intl-universal'
-import axios from 'axios';
-import IntlPolyfill from "intl";
-global.Intl = IntlPolyfill
-require('intl/locale-data/jsonp/en.js');
-require('intl/locale-data/jsonp/zh.js');
+
 const HeadInjector = () => (
   <Head>
     <title>Features</title>
@@ -25,36 +21,10 @@ const HeadInjector = () => (
 )
 
 export class MyFeafures extends Component {
-  state = {initDone: false}
 
-  componentDidMount(){
-          this.loadLocales()
-  }
-  loadLocales() {
-      let currentLocale = intl.determineLocale({
-          urlLocaleKey: 'lang',
-          cookieLocaleKey: 'lang'
-        });
-
-        // 如果没找到，则默认为汉语
-
-      axios
-          .get(`../static/locales/${currentLocale}.json`)
-          .then(res =>{
-              return  intl.init({
-                  currentLocale, // TODO: determine locale here
-                  locales: {
-                    [currentLocale]: res.data
-                  }
-                })
-          }).then(() => {
-          // After loading CLDR locale data, start to render
-          this.setState({ initDone: true });
-        });
-    }
+  
   render() {
     return (
-      this.state.initDone && (
       <Page stickHeader={true}>
         <HeadInjector />
         <Hero>
@@ -63,7 +33,6 @@ export class MyFeafures extends Component {
             <FreaturesFont />
         <TrySection title={intl.get('try')} />
       </Page>
-    )
     )
   }
 }

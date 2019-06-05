@@ -22,27 +22,27 @@ const inject = str => (
 
 export default class MyDocument extends Document {
   static getInitialProps({ req, res, renderPage }) {
-    let redirect
+    // let redirect
 
-    if (req.headers['host'].match(/^www/) !== null) {
-      redirect =
-        'https://' + req.headers['host'].replace(/^www\./, '') + req.url
-    } else if (req.headers['x-forwarded-proto'] !== 'https' && !dev) {
-      const host = req.headers['host'].replace(/^www\./, '')
-      redirect = 'https://' + host + req.url
-    }
+    // if (req.headers['host'].match(/^www/) !== null) {
+    //   redirect =
+    //     'https://' + req.headers['host'].replace(/^www\./, '') + req.url
+    // } else if (req.headers['x-forwarded-proto'] !== 'https' && !dev) {
+    //   const host = req.headers['host'].replace(/^www\./, '')
+    //   redirect = 'https://' + host + req.url
+    // }
 
-    if (redirect) {
-      if (res) {
-        res.writeHead(301, {
-          Location: redirect
-        })
-        res.end()
-        res.finished = true
-      } else {
-        Router.push(redirect)
-      }
-    }
+    // if (redirect) {
+    //   if (res) {
+    //     res.writeHead(301, {
+    //       Location: redirect
+    //     })
+    //     res.end()
+    //     res.finished = true
+    //   } else {
+    //     Router.push(redirect)
+    //   }
+    // }
 
     const sheet = new ServerStyleSheet()
     const page = renderPage(App => props =>

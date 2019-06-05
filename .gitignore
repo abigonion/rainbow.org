@@ -67,3 +67,4 @@ typings/
 
 .history
 .package.json.swp
+out
