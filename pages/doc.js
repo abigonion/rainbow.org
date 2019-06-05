@@ -24,6 +24,10 @@ import { media } from '../src/styles'
 import sidebar from '../src/Documentation/sidebar'
 import intl from 'react-intl-universal';
 import axios from 'axios';
+import IntlPolyfill from "intl";
+global.Intl = IntlPolyfill
+require('intl/locale-data/jsonp/en.js');
+require('intl/locale-data/jsonp/zh.js');
 export default class Documentation extends Component {
   constructor() {
     super()

@@ -14,7 +14,10 @@ import TrySection from '../src/TrySection'
 import FreaturesFont from '../src/FreaturesFont';
 import intl from 'react-intl-universal'
 import axios from 'axios';
-
+import IntlPolyfill from "intl";
+global.Intl = IntlPolyfill
+require('intl/locale-data/jsonp/en.js');
+require('intl/locale-data/jsonp/zh.js');
 const HeadInjector = () => (
   <Head>
     <title>Features</title>

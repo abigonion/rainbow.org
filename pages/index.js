@@ -13,6 +13,9 @@ import UseCases from '../src/UseCases'
 import Subscribe from '../src/Subscribe'
 
 import intl from 'react-intl-universal';
+import IntlPolyfill from "intl";
+global.Intl = IntlPolyfill;
+
 require('intl/locale-data/jsonp/en.js');
 require('intl/locale-data/jsonp/zh.js');
 const locales = {
