@@ -119,7 +119,7 @@ export default class MyDocument extends Document {
         <body>
           <Main />
           <NextScript />
-          {inject(
+          {/* {inject(
             `
             <script
                 type="text/javascript"
@@ -136,7 +136,7 @@ export default class MyDocument extends Document {
                 })
               }
             </script>`
-          )}
+          )} */}
         </body>
       </html>
     )

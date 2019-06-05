@@ -22,7 +22,8 @@ import styled from 'styled-components'
 import { media } from '../src/styles'
 // json
 import sidebar from '../src/Documentation/sidebar'
-
+import intl from 'react-intl-universal';
+import axios from 'axios';
 export default class Documentation extends Component {
   constructor() {
     super()
@@ -44,8 +45,29 @@ export default class Documentation extends Component {
       // wheelPropagation: window.innerWidth <= 572
       wheelPropagation: true
     })
+    this.loadLocales()
   }
-
+  loadLocales() {
+    let currentLocale = intl.determineLocale({
+        urlLocaleKey: 'lang',
+        cookieLocaleKey: 'lang'
+      });
+      console.log('我正在被执行')
+      // 如果没找到，则默认为汉语
+    axios
+        .get(`../static/locales/${currentLocale}.json`)
+        .then(res =>{
+            return  intl.init({
+                currentLocale, // TODO: determine locale here
+                locales: {
+                  [currentLocale]: res.data
+                }
+              })
+        }).then(() => {
+        // After loading CLDR locale data, start to render
+        this.setState({ initDone: true });
+      });
+  }
   componentDidUpdate() {
     this.ps.update()
   }
