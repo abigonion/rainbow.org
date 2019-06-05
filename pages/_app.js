@@ -17,8 +17,8 @@ export default class MyApp extends App {
         });
         // 如果没找到，则默认为汉语
         axios
-            //.get(`../static/locales/${currentLocale}.json`)
-            .get(`https://raw.githubusercontent.com/abigonion/rainbow.org/master/static/locales/${currentLocale}.json`)
+            .get(`../static/locales/${currentLocale}.json`)
+            //.get(`https://raw.githubusercontent.com/abigonion/rainbow.org/master/static/locales/${currentLocale}.json`)
                 .then(res => {
                     console.log(`../static/locales/${currentLocale}.json`)
                     return intl.init({
